@@ -1,1 +1,3 @@
-# Vibration-Signal-Processing
+# Vibration Signal Processing
+* Pre-Processing
+  * Trend Term Elimination
