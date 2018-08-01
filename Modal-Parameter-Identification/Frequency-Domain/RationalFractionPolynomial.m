@@ -3,6 +3,10 @@
 %%%%%%%%%%%%%%%%%%
 %Levy·½·¨ %
 %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%                          Copyright                        %
+%     This code is developed by Jianhui Li    %
+%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
 clc
 clear
