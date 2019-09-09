@@ -2,23 +2,35 @@
 For multi-degree freedom systems, the equation of motion in local coordinate system is given as:
 $$m\ddot x = F - c\dot x - kx$$
 
-or in matrix from: 
+or in matrix from:
 
-$$\left[ {{M_x}} \right]\left\{ {\ddot x} \right\} + \left[ {{C_x}} \right]\left\{ {\dot x} \right\} + \left[ {{K_x}} \right]\left\{ x \right\} = \left\{ F \right\}$$
+$${\left[ {{M_x}} \right]\left\{ {\ddot x} \right\} + \left[ {{C_x}} \right]\left\{ {\dot x} \right\} + \left[ {{K_x}} \right]\left\{ x \right\} = \left\{ F \right\}}$$
+
 These equations are coupled and are cumbersome to solve for more than two degree of freedom systems, thus they are converted to modal coordinates as:
-$$\left[ {{M_q}} \right]\left\{ {\ddot q} \right\} + \left[ {{C_q}} \right]\left\{ {\dot q} \right\} + \left[ {{K_q}} \right]\left\{ q \right\} = \left\{ R \right\}$$
+
+$${\left[ {{M_q}} \right]\left\{ {\ddot q} \right\} + \left[ {{C_q}} \right]\left\{ {\dot q} \right\} + \left[ {{K_q}} \right]\left\{ q \right\} = \left\{ R \right\}}$$
+
 Where the modal mass, modal damping and model stiffness are separately:
-$$ {\left[ M \right]_q} = \left\{ P \right\}_k^T\left[ {{M_x}} \right]{\left\{ P \right\}_k} $$
-$$ {\left[ C \right]_q} = \left\{ P \right\}_k^T\left[ {{C_x}} \right]{\left\{ P \right\}_k} $$
-$$ {\left[ K \right]_q} = \left\{ P \right\}_k^T\left[ {{K_x}} \right]{\left\{ P \right\}_k} $$
+
+$${\left[ M \right]_q} = \left\{ P \right\}_k^T\left[ {{M_x}} \right]{\left\{ P \right\}_k}$$
+
+$${\left[ C \right]_q} = \left\{ P \right\}_k^T\left[ {{C_x}} \right]{\left\{ P \right\}_k}$$
+
+$${\left[ K \right]_q} = \left\{ P \right\}_k^T\left[ {{K_x}} \right]{\left\{ P \right\}_k}$$
+
 And ${\left\{ P \right\}_k}$ is the Eigenvector (mode shapes)
 The Frequency Response Function (FRF) of the system can be write as:
 $$ \left[ {H(s)} \right] = \frac{{\left\{ {X(s)} \right\}}}{{\left\{ {F(s)} \right\}}} $$
+
 The element in row i and column l of $\left[ {H\left( s \right)} \right]$ matrix may be given as residues form:
+
 $$ {h_{il}} = \sum\limits_{k = 1}^n {\left( {\frac{{{\alpha _{il,k}} + {\beta _{il,k}}s}}{{{s^2} + 2{\xi _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} \right)} $$
 Where n – number of modes.
+
 The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes and modal transfer functions.
+
 $$ \left\{ X \right\} = \left( {{{\sum\limits_{k = 1}^n {{{\left[ P \right]}_k}\left[ P \right]_k^T\left[ \Phi  \right]} }_{qk}}} \right)\left\{ F \right\} $$
+
 Thus,
 $$ \left[ {H(s)} \right]{\rm{ = }}\sum\limits_{k = 1}^n {\frac{{{{\left\{ P \right\}}_k}\left\{ P \right\}_k^*}}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} = \sum\limits_{k = 1}^n {\frac{{{{\left[ R \right]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
 Note that the modal mass for mode k using the unscaled modal matrix is:
@@ -27,8 +39,10 @@ Thus $\left( {\left\{ P \right\}_k^T{{\left\{ P \right\}}_k}} \right)/{m_{q,k}}$
 $$ \frac{{\left\{ P \right\}_k^T}}{{\sqrt {{m_{{q_k}}}} }}\left[ {{M_x}} \right]\frac{{{{\left\{ P \right\}}_k}}}{{\sqrt {{m_{{q_k}}}} }} = 1 $$
 $$ \left\{ u \right\}_k^T\left[ {{M_x}} \right]{\left\{ u \right\}_k} = 1 $$
 This is a convenient way to identify the modal parameters, i.e. mode shapes, modal stiffness and modal damping of the structure.
+
 ${\left\{ u \right\}_k}$- the mass normalized mode shape
 $$ \frac{{\left\{ P \right\}_k^T{{\left\{ P \right\}}_k}}}{{{m_{{q_k}}}}} = {\left\{ u \right\}_k}\left\{ u \right\}_k^T = {\left[ R \right]_k} $$
+
 Where,
 $$ {\left[ R \right]_k} = {\left[ {\begin{array}{*{20}{c}}
 {{u_1}{u_1}}&{{u_1}{u_2}}& \cdots &{{u_1}{u_n}}\\
@@ -36,6 +50,7 @@ $$ {\left[ R \right]_k} = {\left[ {\begin{array}{*{20}{c}}
  \vdots & \vdots & \ddots & \vdots \\
 {{u_n}{u_1}}&{{u_n}{u_2}}& \cdots &{{u_n}{u_n}}
 \end{array}} \right]_k} $$
+
 In our case, the residue matrix for specific modes will be of the form:
 $$ \left\{ {\begin{array}{*{20}{c}}
 {{R_{l1}}}\\
