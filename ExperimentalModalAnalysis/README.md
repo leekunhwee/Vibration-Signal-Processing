@@ -44,7 +44,7 @@ Where n – number of modes.
 
 The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes and modal transfer functions.
 
-$$ \{ X \} = \left( {{{\sum\limits_{k = 1}^n {{{[ P ]}_k}[ P ]_k^T[ \Phi  ]} }_{qk}}} \right)\{ F \} $$
+$$ \{ X \} = \left( {{{\sum\limits_{k = 1}^n {[ P ]_k}[ P ]_k^T [\Phi]}}_{qk}} \right) \{ F \} $$
 
 Thus,
 $$ [ {H(s)}]{\rm{ = }}\sum\limits_{k = 1}^n {\frac{{{{\{ P \}}_k}\{ P \}_k^*}}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} = \sum\limits_{k = 1}^n {\frac{{{{[ R ]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
@@ -66,6 +66,9 @@ ${\{ u \}_k}$ - the mass normalized mode shape
 $$ \frac{{\{ P \}_k^T{{\{ P \}}_k}}}{{{m_{{q_k}}}}} = {\{ u \}_k}\{ u \}_k^T = {[ R ]_k} $$
 
 Where,
+
+$$\begin{pmatrix}a & b\\\ c & d\end{pmatrix}$$
+
 
 $$ {[ R ]_k} = {\left( {\begin{array}{*{20}{c}}
 {{u_1}{u_1}}&{{u_1}{u_2}}& \cdots &{{u_1}{u_n}}\\
@@ -105,6 +108,8 @@ $$ \left\{ {\begin{array}{*{20}{c}}
 {{u_1}{u_4}}\\
 {{u_1}{u_5}}
 \end{array}} \right\}_k^T $$
+
+
 
 The transfer function ${\Phi _{11}}$is measured by hitting the structure at point 1 and measuring at point 1, i.e. where the accelerometer is mounted. This is known as the direct transfer function. The transfer function ${\Phi _{12}}$ is measured by hitting the structure at point 2 and measuring at point 1. This is a cross transfer function.
 
