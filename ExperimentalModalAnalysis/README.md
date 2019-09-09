@@ -33,17 +33,25 @@ $$ \left\{ X \right\} = \left( {{{\sum\limits_{k = 1}^n {{{\left[ P \right]}_k}\
 
 Thus,
 $$ \left[ {H(s)} \right]{\rm{ = }}\sum\limits_{k = 1}^n {\frac{{{{\left\{ P \right\}}_k}\left\{ P \right\}_k^*}}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} = \sum\limits_{k = 1}^n {\frac{{{{\left[ R \right]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
+
 Note that the modal mass for mode k using the unscaled modal matrix is:
+
 $$ {m_{q,k}} = \left\{ P \right\}_k^T\left[ {{M_x}} \right]{\left\{ P \right\}_k} $$
+
 Thus $\left( {\left\{ P \right\}_k^T{{\left\{ P \right\}}_k}} \right)/{m_{q,k}}$ represents the normalization of each eigenvector with the square root of the modal mass.
+
 $$ \frac{{\left\{ P \right\}_k^T}}{{\sqrt {{m_{{q_k}}}} }}\left[ {{M_x}} \right]\frac{{{{\left\{ P \right\}}_k}}}{{\sqrt {{m_{{q_k}}}} }} = 1 $$
+
 $$ \left\{ u \right\}_k^T\left[ {{M_x}} \right]{\left\{ u \right\}_k} = 1 $$
+
 This is a convenient way to identify the modal parameters, i.e. mode shapes, modal stiffness and modal damping of the structure.
 
-${\left\{ u \right\}_k}$- the mass normalized mode shape
+${\{ u \}_k}$ - the mass normalized mode shape
+
 $$ \frac{{\left\{ P \right\}_k^T{{\left\{ P \right\}}_k}}}{{{m_{{q_k}}}}} = {\left\{ u \right\}_k}\left\{ u \right\}_k^T = {\left[ R \right]_k} $$
 
 Where,
+
 $$ {\left[ R \right]_k} = {\left[ {\begin{array}{*{20}{c}}
 {{u_1}{u_1}}&{{u_1}{u_2}}& \cdots &{{u_1}{u_n}}\\
 {{u_2}{u_1}}&{{u_2}{u_2}}& \cdots &{{u_2}{u_n}}\\
@@ -52,6 +60,7 @@ $$ {\left[ R \right]_k} = {\left[ {\begin{array}{*{20}{c}}
 \end{array}} \right]_k} $$
 
 In our case, the residue matrix for specific modes will be of the form:
+
 $$ \left\{ {\begin{array}{*{20}{c}}
 {{R_{l1}}}\\
 {{R_{l2}}}\\
@@ -64,7 +73,8 @@ $$ \left\{ {\begin{array}{*{20}{c}}
 {{u_l}{u_3}}\\
 {{u_l}{u_4}}\\
 {{u_l}{u_5}}
-\end{array}} \right\}_k^T $$ 
+\end{array}} \right\}_k^T $$
+
 Where, k=1,2,…, n for n number of modes. When we choose move the hammer to impact all the point on the tool-holder combination and measure the vibration at point 1 where the accelerometer is mounted. The matrix can be written as:
 
 $$ \left\{ {\begin{array}{*{20}{c}}
@@ -84,24 +94,38 @@ $$ \left\{ {\begin{array}{*{20}{c}}
 The transfer function ${\Phi _{11}}$is measured by hitting the structure at point 1 and measuring at point 1, i.e. where the accelerometer is mounted. This is known as the direct transfer function. The transfer function ${\Phi _{12}}$ is measured by hitting the structure at point 2 and measuring at point 1. This is a cross transfer function.
 
 $$ \Phi  = G + jH $$
+
 Where, the u11u11 means the direct displacement response residues of point 1 contributed by the first mode. E.g. for u11, First subscript denote the measured or impact point, and Second subscript denote the modal number.
 If let $ s \to j\omega $
+
 $$ {\Phi _{11}} = {\left( {\frac{{{u_{11}}{u_{11}}}}{{{\omega ^2} + j2{\zeta _1}{\omega _{n1}}\omega  - \omega _{n1}^2}}} \right)_{\bmod e\# 1}} + {\left( {\frac{{{u_{12}}{u_{12}}}}{{{\omega ^2} + j2{\zeta _2}{\omega _{n2}}\omega  - \omega _{n2}^2}}} \right)_{\bmod e\# 2}} + {\left( {\frac{{{u_{13}}{u_{13}}}}{{{\omega ^2} + j2{\zeta _3}{\omega _{n3}}\omega  - \omega _{n3}^2}}} \right)_{\bmod e\# 3}} $$
-When ω=ωn1 , leads to a negligible contribution from ωn2 and ωn3, and the first part become equal to: 
+
+When ω=ωn1 , leads to a negligible contribution from ωn2 and ωn3, and the first part become equal to:
+
 $$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx {\left( {\frac{{{u_{11}}{u_{11}}}}{{\omega _{n1}^2 + j2{\zeta _1}{\omega _{n1}}{\omega _{n1}} - \omega _{n1}^2}}} \right)_{\bmod e\# 1}} $$
+
 So we have:
+
 $$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx j{H_{11,1}} = {\left( {\frac{{{u_{11}}{u_{11}}}}{{j2{\zeta _1}\omega _{n1}^2}}} \right)_{\bmod e\# 1}} $$
+
 $$ {u_{11}} = \sqrt { - 2{\zeta _1}\omega _{n1}^2{H_{11,1}}} $$
+
 Similarly, when ω=ωn2  and ω=ωn3,
+
 $$ {\Phi _{11}}\left( {\omega  = {\omega _{n2}}} \right) \approx j{H_{11,2}} = {\left( {\frac{{{u_{12}}{u_{12}}}}{{j2{\zeta _2}\omega _{n2}^2}}} \right)_{\bmod e\# 2}} $$
+
 $$ {u_{12}} = \sqrt { - 2{\zeta _2}\omega _{n2}^2{H_{11,2}}} $$
+
 $$ {\Phi _{11}}\left( {\omega  = {\omega _{n3}}} \right) \approx j{H_{11,3}} = {\left( {\frac{{{u_{13}}{u_{13}}}}{{j2{\zeta _3}\omega _{n3}^2}}} \right)_{\bmod e\# 3}} $$
+
 $$ {u_{13}} = \sqrt { - 2{\zeta _3}\omega _{n3}^2{H_{11,3}}} $$
-Similarly, 
+
+Similarly,
 $$ {\Phi _{12}} = {\left( {\frac{{{u_{11}}{u_{21}}}}{{{s^2} + 2{\zeta _1}{\omega _{n1}}s + \omega _{n1}^2}}} \right)_{\bmod e\# 1}} + {\left( {\frac{{{u_{12}}{u_{22}}}}{{{s^2} + 2{\zeta _2}{\omega _{n2}}s + \omega _{n2}^2}}} \right)_{\bmod e\# 2}} + {\left( {\frac{{{u_{13}}{u_{23}}}}{{{s^2} + 2{\zeta _3}{\omega _{n3}}s + \omega _{n3}^2}}} \right)_{\bmod e\# 3}} $$
 Again, substituting $ s \to j\omega $ and then ω=ωn1, ω=ωn2 and ω=ωn3 subsequently, gives: 
 $ {u_{21}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{12,1}}}}{{{u_{11}}}} $ ; $ {u_{22}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{12,2}}}}{{{u_{12}}}} $; $ {u_{23}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{12,3}}}}{{{u_{13}}}} $
-Similarly, 
+
+Similarly,
 $ {u_{31}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{13,1}}}}{{{u_{11}}}} $; $ {u_{32}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{13,2}}}}{{{u_{12}}}} $; $ {u_{33}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{13,3}}}}{{{u_{13}}}} $
 $ {u_{41}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{14,1}}}}{{{u_{11}}}} $; $ {u_{42}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{14,2}}}}{{{u_{12}}}} $; $ {u_{43}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{14,3}}}}{{{u_{13}}}} $
 $ {u_{51}} = \frac{{ - 2{\xi _1}\omega _{n1}^2{H_{15,1}}}}{{{u_{11}}}} $; $ {u_{52}} = \frac{{ - 2{\xi _2}\omega _{n2}^2{H_{15,2}}}}{{{u_{12}}}} $; $ {u_{53}} = \frac{{ - 2{\xi _3}\omega _{n3}^2{H_{15,3}}}}{{{u_{13}}}} $
