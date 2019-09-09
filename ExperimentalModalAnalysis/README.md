@@ -67,9 +67,10 @@ $$ \frac{{\{ P \}_k^T{{\{ P \}}_k}}}{{{m_{{q_k}}}}} = {\{ u \}_k}\{ u \}_k^T = {
 
 Where,
 
-$$\begin{pmatrix}a & b\\\ c & d\end{pmatrix}$$
-
-$$[ R ]_k = \begin{pmatrix}{u_1}{u_1} & {u_1}{u_2} & \cdots & {u_1}{u_n}\\\ {{u_2}{u_1}} & {{u_2}{u_2}} & \cdots & {{u_2}{u_n}}\\\ \vdots & \vdots & \ddots & \vdots \\\ {{u_n}{u_1}} & {{u_n}{u_2}} & \cdots & {{u_n}{u_n}}\end{pmatrix}_k$$
+$$[ R ]_k = \begin{bmatrix}{u_1}{u_1} & {u_1}{u_2} & \cdots & {u_1}{u_n}\\\
+{{u_2}{u_1}} & {{u_2}{u_2}} & \cdots & {{u_2}{u_n}}\\\
+\vdots & \vdots & \ddots & \vdots \\\
+{{u_n}{u_1}} & {{u_n}{u_2}} & \cdots & {{u_n}{u_n}}\end{bmatrix}_k$$
 
 In our case, the residue matrix for specific modes will be of the form:
 
