@@ -1,4 +1,18 @@
 # Experimental Modal Analysis
+
+Measured from the tool tip in axial (z) direction, the approximate impact locations of the 5 points are 0, 55, 90, 130 and 165 mm. The vibration is measured at the tool tip (Point 1) by an accelerometer.
+
+<br>
+<div align = "center">
+<img src = "Tool.png"  width = "250" height = "200" alt = "Points on the Tool" title = "Points on the Tool">
+</div>
+<p align = "center"><b>Points on the Tool</b></p>
+<br>
+
+In the five .txt files, the first column of each file is the frequency [Hz], second column is the real part of the computed FRF [m/N], and the third column is the imaginary part of the computed FRF
+[m/N].
+
+
 For multi-degree freedom systems, the equation of motion in local coordinate system is given as:
 $$m\ddot x = F - c\dot x - kx$$
 
@@ -18,46 +32,47 @@ $${[ C ]_q} = \{ P \}_k^T[ {{C_x}} ]{\{ P \}_k}$$
 
 $${[ K ]_q} = \{ P \}_k^T[ {{K_x}} ]{\{ P \}_k}$$
 
-And ${{ P \}_k}$ is the Eigenvector (mode shapes)
+And $\{ P \}_k  $ is the Eigenvector (mode shapes)
 The Frequency Response Function (FRF) of the system can be write as:
 $$ [ {H(s)} ] = \frac{{\{ {X(s)} \}}}{{\{ {F(s)} \}}} $$
 
 The element in row i and column l of $\left[ {H\left( s \right)} \right]$ matrix may be given as residues form:
 
 $$ {h_{il}} = \sum\limits_{k = 1}^n {\left( {\frac{{{\alpha _{il,k}} + {\beta _{il,k}}s}}{{{s^2} + 2{\xi _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} \right)} $$
+
 Where n – number of modes.
 
 The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes and modal transfer functions.
 
-$$ \left\{ X \right\} = \left( {{{\sum\limits_{k = 1}^n {{{\left[ P \right]}_k}\left[ P \right]_k^T\left[ \Phi  \right]} }_{qk}}} \right)\left\{ F \right\} $$
+$$ \{ X \} = \left( {{{\sum\limits_{k = 1}^n {{{[ P ]}_k}[ P ]_k^T[ \Phi  ]} }_{qk}}} \right)\{ F \} $$
 
 Thus,
-$$ \left[ {H(s)} \right]{\rm{ = }}\sum\limits_{k = 1}^n {\frac{{{{\left\{ P \right\}}_k}\left\{ P \right\}_k^*}}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} = \sum\limits_{k = 1}^n {\frac{{{{\left[ R \right]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
+$$ [ {H(s)}]{\rm{ = }}\sum\limits_{k = 1}^n {\frac{{{{\{ P \}}_k}\{ P \}_k^*}}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} = \sum\limits_{k = 1}^n {\frac{{{{[ R ]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
 
 Note that the modal mass for mode k using the unscaled modal matrix is:
 
-$$ {m_{q,k}} = \left\{ P \right\}_k^T\left[ {{M_x}} \right]{\left\{ P \right\}_k} $$
+$$ {m_{q,k}} = \{ P \}_k^T[ {{M_x}} ]{\{ P \}_k} $$
 
-Thus $\left( {\left\{ P \right\}_k^T{{\left\{ P \right\}}_k}} \right)/{m_{q,k}}$ represents the normalization of each eigenvector with the square root of the modal mass.
+Thus $\left( {\{ P \}_k^T{{\{ P \}}_k}} \right)/{m_{q,k}}$ represents the normalization of each eigenvector with the square root of the modal mass.
 
-$$ \frac{{\left\{ P \right\}_k^T}}{{\sqrt {{m_{{q_k}}}} }}\left[ {{M_x}} \right]\frac{{{{\left\{ P \right\}}_k}}}{{\sqrt {{m_{{q_k}}}} }} = 1 $$
+$$ \frac{{\{ P \}_k^T}}{{\sqrt {{m_{{q_k}}}} }}[ {{M_x}} ]\frac{{{{\{ P \}}_k}}}{{\sqrt {{m_{{q_k}}}} }} = 1 $$
 
-$$ \left\{ u \right\}_k^T\left[ {{M_x}} \right]{\left\{ u \right\}_k} = 1 $$
+$$ \{ u \}_k^T[ {{M_x}} ]{\{ u \}_k} = 1 $$
 
 This is a convenient way to identify the modal parameters, i.e. mode shapes, modal stiffness and modal damping of the structure.
 
 ${\{ u \}_k}$ - the mass normalized mode shape
 
-$$ \frac{{\left\{ P \right\}_k^T{{\left\{ P \right\}}_k}}}{{{m_{{q_k}}}}} = {\left\{ u \right\}_k}\left\{ u \right\}_k^T = {\left[ R \right]_k} $$
+$$ \frac{{\{ P \}_k^T{{\{ P \}}_k}}}{{{m_{{q_k}}}}} = {\{ u \}_k}\{ u \}_k^T = {[ R ]_k} $$
 
 Where,
 
-$$ {\left[ R \right]_k} = {\left[ {\begin{array}{*{20}{c}}
+$$ {[ R ]_k} = {\left( {\begin{array}{*{20}{c}}
 {{u_1}{u_1}}&{{u_1}{u_2}}& \cdots &{{u_1}{u_n}}\\
 {{u_2}{u_1}}&{{u_2}{u_2}}& \cdots &{{u_2}{u_n}}\\
  \vdots & \vdots & \ddots & \vdots \\
 {{u_n}{u_1}}&{{u_n}{u_2}}& \cdots &{{u_n}{u_n}}
-\end{array}} \right]_k} $$
+\end{array}} \right)_k} $$
 
 In our case, the residue matrix for specific modes will be of the form:
 
@@ -153,7 +168,7 @@ p3 =    [2.0023    0.4510   -0.1414   -0.2755   -0.3013]T
 
 <br>
 <div align = "center">
-<img src = "Modes.png"  width = "600" height = "400" alt = "Parameters of Cantilever Beam" title = "Parameters of Cantilever Beam">
+<img src = "Modes.png"  width = "600" height = "400" alt = "Modal shapes of Tool" title = "Modal shapes of Tool">
 </div>
 <p align = "center"><b>Modal shapes of Tool</b></p>
 <br>
