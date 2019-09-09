@@ -75,34 +75,34 @@ $$[ R ]_k = \begin{bmatrix}{u_1}{u_1} & {u_1}{u_2} & \cdots & {u_1}{u_n}\\\\
 In our case, the residue matrix for specific modes will be of the form:
 
 $$ \begin{pmatrix}
-{R_{l1}}\\\
-{R_{l2}}\\\
-{R_{l3}}\\\
-{R_{l4}}\\\
+{R_{l1}}\\\\
+{R_{l2}}\\\\
+{R_{l3}}\\\\
+{R_{l4}}\\\\
 {R_{l5}}
 \end{pmatrix}_k^T =
 \begin{pmatrix}
-{u_l}{u_1}\\\
-{u_l}{u_2}\\\
-{u_l}{u_3}\\\
-{u_l}{u_4}\\\
+{u_l}{u_1}\\\\
+{u_l}{u_2}\\\\
+{u_l}{u_3}\\\\
+{u_l}{u_4}\\\\
 {u_l}{u_5}
 \end{pmatrix}_k^T $$
 
 Where, k=1,2,…, n for n number of modes. When we choose move the hammer to impact all the point on the tool-holder combination and measure the vibration at point 1 where the accelerometer is mounted. The matrix can be written as:
 
 $$ \begin{pmatrix}
-{R_{11}}\\
-{R_{12}}\\
-{R_{13}}\\
-{R_{14}}\\
+{R_{11}}\\\\
+{R_{12}}\\\\
+{R_{13}}\\\\
+{R_{14}}\\\\
 {R_{15}}
 \end{pmatrix}_k^T =
 \begin{pmatrix}
-{u_1}{u_1}\\
-{u_1}{u_2}\\
-{u_1}{u_3}\\
-{u_1}{u_4}\\
+{u_1}{u_1}\\\\
+{u_1}{u_2}\\\\
+{u_1}{u_3}\\\\
+{u_1}{u_4}\\\\
 {u_1}{u_5}
 \end{pmatrix}_k^T $$
 
