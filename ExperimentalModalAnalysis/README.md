@@ -1,10 +1,12 @@
 # Experimental Modal Analysis
 For multi-degree freedom systems, the equation of motion in local coordinate system is given as:
 $$m\ddot x = F - c\dot x - kx$$
+
 or in matrix from: 
-$$ \left[ {{M_x}} \right]\left\{ {\ddot x} \right\} + \left[ {{C_x}} \right]\left\{ {\dot x} \right\} + \left[ {{K_x}} \right]\left\{ x \right\} = \left\{ F \right\} $$
+
+$$\left[ {{M_x}} \right]\left\{ {\ddot x} \right\} + \left[ {{C_x}} \right]\left\{ {\dot x} \right\} + \left[ {{K_x}} \right]\left\{ x \right\} = \left\{ F \right\}$$
 These equations are coupled and are cumbersome to solve for more than two degree of freedom systems, thus they are converted to modal coordinates as:
-$$ \left[ {{M_q}} \right]\left\{ {\ddot q} \right\} + \left[ {{C_q}} \right]\left\{ {\dot q} \right\} + \left[ {{K_q}} \right]\left\{ q \right\} = \left\{ R \right\} $$
+$$\left[ {{M_q}} \right]\left\{ {\ddot q} \right\} + \left[ {{C_q}} \right]\left\{ {\dot q} \right\} + \left[ {{K_q}} \right]\left\{ q \right\} = \left\{ R \right\}$$
 Where the modal mass, modal damping and model stiffness are separately:
 $$ {\left[ M \right]_q} = \left\{ P \right\}_k^T\left[ {{M_x}} \right]{\left\{ P \right\}_k} $$
 $$ {\left[ C \right]_q} = \left\{ P \right\}_k^T\left[ {{C_x}} \right]{\left\{ P \right\}_k} $$
