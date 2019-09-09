@@ -8,19 +8,19 @@ $${[ {{M_x}} ]{ \{\ddot x} \} + [ {{C_x}} ]\{ {\dot x} \} + [ {{K_x}} ]\{ x \} =
 
 These equations are coupled and are cumbersome to solve for more than two degree of freedom systems, thus they are converted to modal coordinates as:
 
-$${\left[ {{M_q}} \right]\left\{ {\ddot q} \right\} + \left[ {{C_q}} \right]\left\{ {\dot q} \right\} + \left[ {{K_q}} \right]\left\{ q \right\} = \left\{ R \right\}}$$
+$$[ {{M_q}} ]\{ {\ddot q} \} + [ {{C_q}} ]\{ {\dot q} \} + [ {{K_q}} ]\{ q \} = \{ R \}$$
 
 Where the modal mass, modal damping and model stiffness are separately:
 
-$${\left[ M \right]_q} = \left\{ P \right\}_k^T\left[ {{M_x}} \right]{\left\{ P \right\}_k}$$
+$${[ M ]_q} = \{ P \}_k^T[ {{M_x}} ]{\{ P \}_k}$$
 
-$${\left[ C \right]_q} = \left\{ P \right\}_k^T\left[ {{C_x}} \right]{\left\{ P \right\}_k}$$
+$${[ C ]_q} = \{ P \}_k^T[ {{C_x}} ]{\{ P \}_k}$$
 
-$${\left[ K \right]_q} = \left\{ P \right\}_k^T\left[ {{K_x}} \right]{\left\{ P \right\}_k}$$
+$${[ K ]_q} = \{ P \}_k^T[ {{K_x}} ]{\{ P \}_k}$$
 
-And ${\left\{ P \right\}_k}$ is the Eigenvector (mode shapes)
+And ${{ P \}_k}$ is the Eigenvector (mode shapes)
 The Frequency Response Function (FRF) of the system can be write as:
-$$ \left[ {H(s)} \right] = \frac{{\left\{ {X(s)} \right\}}}{{\left\{ {F(s)} \right\}}} $$
+$$ [ {H(s)} ] = \frac{{\{ {X(s)} \}}}{{\{ {F(s)} \}}} $$
 
 The element in row i and column l of $\left[ {H\left( s \right)} \right]$ matrix may be given as residues form:
 
