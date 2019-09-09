@@ -4,7 +4,7 @@ $$m\ddot x = F - c\dot x - kx$$
 
 or in matrix from:
 
-$${\left[ {{M_x}} \right]\left\{ {\ddot x} \right\} + \left[ {{C_x}} \right]\left\{ {\dot x} \right\} + \left[ {{K_x}} \right]\left\{ x \right\} = \left\{ F \right\}}$$
+$${[ {{M_x}} ]{ \{\ddot x} \} + [ {{C_x}} ]\{ {\dot x} \} + [ {{K_x}} ]\{ x \} = \{ F \}}$$
 
 These equations are coupled and are cumbersome to solve for more than two degree of freedom systems, thus they are converted to modal coordinates as:
 
@@ -66,6 +66,7 @@ $$ \left\{ {\begin{array}{*{20}{c}}
 {{u_l}{u_5}}
 \end{array}} \right\}_k^T $$ 
 Where, k=1,2,…, n for n number of modes. When we choose move the hammer to impact all the point on the tool-holder combination and measure the vibration at point 1 where the accelerometer is mounted. The matrix can be written as:
+
 $$ \left\{ {\begin{array}{*{20}{c}}
 {{R_{11}}}\\
 {{R_{12}}}\\
@@ -79,7 +80,9 @@ $$ \left\{ {\begin{array}{*{20}{c}}
 {{u_1}{u_4}}\\
 {{u_1}{u_5}}
 \end{array}} \right\}_k^T $$
-The transfer function ${\Phi _{11}}$is measured by hitting the structure at point 1 and measuring at point 1, i.e. where the accelerometer is mounted. This is known as the direct transfer function. The transfer function ${\Phi _{12}}$ is measured by hitting the structure at point 2 and measuring at point 1. This is a cross transfer function. 
+
+The transfer function ${\Phi _{11}}$is measured by hitting the structure at point 1 and measuring at point 1, i.e. where the accelerometer is mounted. This is known as the direct transfer function. The transfer function ${\Phi _{12}}$ is measured by hitting the structure at point 2 and measuring at point 1. This is a cross transfer function.
+
 $$ \Phi  = G + jH $$
 Where, the u11u11 means the direct displacement response residues of point 1 contributed by the first mode. E.g. for u11, First subscript denote the measured or impact point, and Second subscript denote the modal number.
 If let $ s \to j\omega $
@@ -108,7 +111,8 @@ The negative peak value from the imaginary part (Hk) of the FRF is also used to 
 $$ {k_k} = \frac{{ - 1}}{{2{\zeta _k}{H_k}}} $$
 Having obtained the modal stiffness, the modal mass and the modal damping can also be evaluated as:
 $$ {m_k} = \frac{{{k_k}}}{{\omega _{nk}^2}} $$
-And 
+And
+
 $$ {c_k} = 2{\zeta _k}\sqrt {{k_k}{m_k}} $$
 The value of the measurement points are given in the table.
 
