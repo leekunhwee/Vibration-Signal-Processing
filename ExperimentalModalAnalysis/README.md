@@ -67,26 +67,27 @@ $$ \frac{{\{ P \}_k^T{{\{ P \}}_k}}}{{{m_{{q_k}}}}} = {\{ u \}_k}\{ u \}_k^T = {
 
 Where,
 
-$$[ R ]_k = \begin{bmatrix}{u_1}{u_1} & {u_1}{u_2} & \cdots & {u_1}{u_n}\\\
+$$[ R ]_k = \left[\begin{matrix}{u_1}{u_1} & {u_1}{u_2} & \cdots & {u_1}{u_n}\\\
 {{u_2}{u_1}} & {{u_2}{u_2}} & \cdots & {{u_2}{u_n}}\\\
 \vdots & \vdots & \ddots & \vdots \\\
-{{u_n}{u_1}} & {{u_n}{u_2}} & \cdots & {{u_n}{u_n}}\end{bmatrix}_k$$
+{{u_n}{u_1}} & {{u_n}{u_2}} & \cdots & {{u_n}{u_n}}\end{matrix}\right]_k$$
 
 In our case, the residue matrix for specific modes will be of the form:
 
-$$ \left\{ {\begin{array}{*{20}{c}}
-{{R_{l1}}}\\
-{{R_{l2}}}\\
-{{R_{l3}}}\\
-{{R_{l4}}}\\
+$$  \begin{array}
+{{R_{l1}}\\\
+{{R_{l2}}}\\\
+{{R_{l3}}}\\\
+{{R_{l4}}}\\\
 {{R_{l5}}}
-\end{array}} \right\}_k^T = \left\{ {\begin{array}{*{20}{c}}
-{{u_l}{u_1}}\\
+\end{array} _k^T =
+\begin{array}
+{u_l}{u_1}}\\
 {{u_l}{u_2}}\\
 {{u_l}{u_3}}\\
 {{u_l}{u_4}}\\
 {{u_l}{u_5}}
-\end{array}} \right\}_k^T $$
+\end{array}_k^T $$
 
 Where, k=1,2,…, n for n number of modes. When we choose move the hammer to impact all the point on the tool-holder combination and measure the vibration at point 1 where the accelerometer is mounted. The matrix can be written as:
 
