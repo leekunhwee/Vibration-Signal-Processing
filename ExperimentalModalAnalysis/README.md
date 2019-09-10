@@ -1,4 +1,4 @@
-# Experimental Modal Analysis
+# Experimental Modal Analysis (Impact Testing)
 
 Measured from the tool tip in axial $(z)$ direction, the approximate impact locations of the $5$ points are $0$, $55$, $90$, $130$ and $165$ mm. The vibration is measured at the tool tip (Point $1$) by an accelerometer.
 
@@ -40,7 +40,7 @@ $$ {h_{il}} = \sum\limits_{k = 1}^n {\left( {\frac{{{\alpha _{il,k}} + {\beta _{
 
 Where $n$ – number of modes.
 
-The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes and modal transfer functions.
+The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes $\{ P \}_k  $ and modal transfer functions $ \Phi_{q,k} $.
 
 $$\{ x \} = \left( {\sum\limits_{k = 1}^n {{{\{ P \}}_k}\{ P \}_k^T {\Phi _{qk}}} } \right)\{ F \}$$
 
@@ -48,7 +48,7 @@ Thus,
 
 $$ \left[ {H(s)} \right]{\text{ = }}\sum\limits_{k = 1}^n {\frac{{{{\left\{ P \right\}}_k}\left\{ P \right\}_k^* }}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k} ^2 }}}  = \sum\limits_{k = 1}^n {\frac{{{{\left[ R \right]}_k}}}{{{s^2 } + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
 
-$$ {[H(s)]} = {\sum\limits_{k = 1}^n {{\frac{P_k P_k^* }{m_{q,k}}} {\frac{1}{{s^2+ 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k} ^2 }}}}} = {\sum\limits_{k = 1}^n {\frac{[R]_k}{s^2 + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2 }}} $$
+$$ {[H(s)]} = {\sum\limits_{k = 1}^n {{\frac{P_kP_k^*}{m_{q,k}}}{\frac{1}{{s^2+ 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k} ^2 }}}}} = {\sum\limits_{k = 1}^n {\frac{[R]_k}{s^2 + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2 }}} $$
 
 Note that the modal mass for mode $k$ using the unscaled modal matrix is:
 
