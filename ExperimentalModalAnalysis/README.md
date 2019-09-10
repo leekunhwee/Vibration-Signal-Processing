@@ -1,6 +1,6 @@
 # Experimental Modal Analysis
 
-Measured from the tool tip in axial $(z)$ direction, the approximate impact locations of the 5 points are $0$, $55$, $90$, $130$ and $165$ mm. The vibration is measured at the tool tip (Point $1$) by an accelerometer.
+Measured from the tool tip in axial $(z)$ direction, the approximate impact locations of the $5$ points are $0$, $55$, $90$, $130$ and $165$ mm. The vibration is measured at the tool tip (Point $1$) by an accelerometer.
 
 <br>
 <div align = "center">
@@ -66,6 +66,8 @@ ${\{ u \}_k}$ - the mass normalized mode shape
 
 $$ \frac{{\{ P \}_k^T{{\{ P \}}_k}}}{{{m_{{q_k}}}}} = {\{ u \}_k}\{ u \}_k^T = {[ R ]_k} $$
 
+$$ \frac{P_k^TP_k}{m_{q_k}} = u_ku_k^T = [R]_k $$
+
 Where,
 
 $$[ R ]_k = \begin{bmatrix}{u_1}{u_1} & {u_1}{u_2} & \cdots & {u_1}{u_n}\\\\
@@ -90,7 +92,7 @@ $$ \begin{pmatrix}
 {u_l}{u_5}
 \end{pmatrix}_k^T $$
 
-Where, k=1,2,…, n for n number of modes. When we choose move the hammer to impact all the point on the tool-holder combination and measure the vibration at point 1 where the accelerometer is mounted. The matrix can be written as:
+Where, $k=1,2,…, n$ for n number of modes. When we choose move the hammer to impact all the point on the tool-holder combination and measure the vibration at point $1$ where the accelerometer is mounted. The matrix can be written as:
 
 $$ \begin{pmatrix}
 {R_{11}}\\\\
@@ -107,19 +109,19 @@ $$ \begin{pmatrix}
 {u_1}{u_5}
 \end{pmatrix}_k^T $$
 
-The transfer function ${\Phi _{11}}$is measured by hitting the structure at point 1 and measuring at point 1, i.e. where the accelerometer is mounted. This is known as the direct transfer function. The transfer function ${\Phi _{12}}$ is measured by hitting the structure at point 2 and measuring at point 1. This is a cross transfer function.
+The transfer function ${\Phi _{11}}$is measured by hitting the structure at point 1 and measuring at point $1$, i.e. where the accelerometer is mounted. This is known as the direct transfer function. The transfer function ${\Phi _{12}}$ is measured by hitting the structure at point $2$ and measuring at point $1$. This is a cross transfer function.
 
 $$ \Phi  = G + jH $$
 
-Where, the u11u11 means the direct displacement response residues of point 1 contributed by the first mode. E.g. for u11, First subscript denote the measured or impact point, and Second subscript denote the modal number.
+Where, the $u_{11}u_{11}$ means the direct displacement response residues of point $1$ contributed by the first mode. E.g. for $u_{11}$, First subscript denote the measured or impact point, and Second subscript denote the modal number.
 
 If let $ s \to j\omega $
 
-$$ {\Phi _{11}} = {\left( {\frac{{{u_{11}}{u_{11}}}}{{{\omega ^2} + j2{\zeta _1}{\omega _{n1}}\omega  - \omega _{n1}^2}}} \right)_{\bmod e\# 1}} + {\left( {\frac{{{u_{12}}{u_{12}}}}{{{\omega ^2} + j2{\zeta _2}{\omega _{n2}}\omega  - \omega _{n2}^2}}} \right)_{\bmod e\# 2}} + {\left( {\frac{{{u_{13}}{u_{13}}}}{{{\omega ^2} + j2{\zeta _3}{\omega _{n3}}\omega  - \omega _{n3}^2}}} \right)_{\bmod e\# 3}} $$
+$$ {\Phi _{11}} = {\left( {\frac{{{u_{11}}{u_{11}}}}{{{\omega ^2} + j2{\zeta _1}{\omega _{n1}}\omega  - \omega _{n1}^2}}} \right)_{mode\ 1}} + {\left( {\frac{{{u_{12}}{u_{12}}}}{{{\omega ^2} + j2{\zeta _2}{\omega _{n2}}\omega  - \omega _{n2}^2}}} \right)_{mode\ 2}} + {\left( {\frac{{{u_{13}}{u_{13}}}}{{{\omega ^2} + j2{\zeta _3}{\omega _{n3}}\omega  - \omega _{n3}^2}}} \right)_{mode\ 3}} $$
 
-When ω=ωn1 , leads to a negligible contribution from ωn2 and ωn3, and the first part become equal to:
+When $ω=ω_{n1}$ , leads to a negligible contribution from ωn2 and ωn3, and the first part become equal to:
 
-$$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx {\left( {\frac{{{u_{11}}{u_{11}}}}{{\omega _{n1}^2 + j2{\zeta _1}{\omega _{n1}}{\omega _{n1}} - \omega _{n1}^2}}} \right)_{\bmod e\# 1}} $$
+$$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx {\left( {\frac{{{u_{11}}{u_{11}}}}{{\omega _{n1}^2 + j2{\zeta _1}{\omega _{n1}}{\omega _{n1}} - \omega _{n1}^2}}} \right)_{mode\ 1}} $$
 
 So we have:
 
@@ -178,18 +180,19 @@ $$
 \begin{array}{c|lcr}
 φ(μm/N) & \text{R(1031)} & \text{R(1104)} & \text{I(1074)}& \text{R(1914)} & \text{R(2092)} & \text{I(1961)} & \text{R(2546)} & \text{R(2783)} & \text{I(2617)}\\\\
 \hline
-H11 & 0.4049 & -0.2891 & -0.6433 & 0.1609 & -0.0588 & -0.2138 & 0.1084 & -0.1173 & -0.2180 \\\\
-H12 & 0.2244 & -0.2384 & -0.4380 & 0.0322 & -0.0355 & -0.0879 & 0.0009 & -0.0451 & -0.0491 \\\\
-H13 & 0.1470 & -0.1814 & -0.3077 & -0.0108 & -0.0274 & -0.0228 & -0.0240 & 0.0014 & 0.0154 \\\\
-H14 & 0.0994 & -0.1344 & -0.2158 & -0.0252 & -0.0016 &  0.0166 & -0.0205 &  0.0091 & 0.0300 \\\\
-H15 & 0.0730 & -0.0947 & -0.1566 & -0.0282 & 0.0037 & 0.0266 & -0.0163 & 0.0143 & 0.0328
+H_{11} & 0.4049 & -0.2891 & -0.6433 & 0.1609 & -0.0588 & -0.2138 & 0.1084 & -0.1173 & -0.2180 \\\\
+H_{12} & 0.2244 & -0.2384 & -0.4380 & 0.0322 & -0.0355 & -0.0879 & 0.0009 & -0.0451 & -0.0491 \\\\
+H_{13} & 0.1470 & -0.1814 & -0.3077 & -0.0108 & -0.0274 & -0.0228 & -0.0240 & 0.0014 & 0.0154 \\\\
+H_{14} & 0.0994 & -0.1344 & -0.2158 & -0.0252 & -0.0016 &  0.0166 & -0.0205 &  0.0091 & 0.0300 \\\\
+H_{15} & 0.0730 & -0.0947 & -0.1566 & -0.0282 & 0.0037 & 0.0266 & -0.0163 & 0.0143 & 0.0328
 \end{array}
 $$
 <br>
+Therefore, the first three modal shapes are:
 $$\begin{cases}
-p1 =    [1.4111 &   0.9608 &  \ \ \  0.6749 &  \ \ \ 0.4734 & \ \ \  0.3435]^T \\\\
-p2 =    [1.7165 &   0.7057 &  \ \ \  0.1830 &  -0.1333 &  -0.2136]^T \\\\
-p3 =    [2.0023 &   0.4510 &  -0.1414 &  -0.2755 &  -0.3013]^T
+p_1 =    [1.4111 &   0.9608 &  \ \ \  0.6749 &  \ \ \ 0.4734 & \ \ \  0.3435]^T \\\\
+p_2 =    [1.7165 &   0.7057 &  \ \ \  0.1830 &  -0.1333 &  -0.2136]^T \\\\
+p_3 =    [2.0023 &   0.4510 &  -0.1414 &  -0.2755 &  -0.3013]^T
 \end{cases}
 $$
 
