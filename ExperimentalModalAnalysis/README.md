@@ -42,7 +42,7 @@ $$ {h_{il}} = \sum\limits_{k = 1}^n {\left( {\frac{{{\alpha _{il,k}} + {\beta _{
 
 Where $n$ – number of modes.
 
-The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes $\{ P \}_k  $ and modal transfer functions $ \Phi_{q,k} $.
+The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes $\{ P \}_k  $ and modal transfer functions $ \Phi _{q,k} $.
 
 $$\{ x \} = \left( {\sum\limits_{k = 1}^n {{{\{ P \}}_k}\{ P \}_k^T {\Phi _{qk}}} } \right)\{ F \}$$
 
