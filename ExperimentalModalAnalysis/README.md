@@ -56,15 +56,15 @@ $$ {m_{q,k}} = \lbrace P \rbrace _k^T[ {{M_x}} ]{\lbrace P \rbrace _k} $$
 
 Thus $ ({P_k^T{P_k}})/{m_{q,k}} $ represents the normalization of each eigenvector with the square root of the modal mass.
 
-$$ {\frac{\lbrace P \rbrace _k^T}{\sqrt {m_{\lbrace q_k \rbrace}}}}{[M_x]}{\frac{\lbrace P_k \rbrace}{\sqrt {m_{q_k}}}} = 1 $$
+$$ {\frac{\lbrace P \rbrace _k^T}{\sqrt {m _{\lbrace q _k \rbrace}}}}{[M _x]}{\frac{\lbrace P _k \rbrace}{\sqrt {m _{q _k}}}} = 1 $$
 
-$$ \lbrace u \rbrace _k^T[ {{M_x}} ]{\lbrace u \rbrace _k} = 1 $$
+$$ \lbrace u \rbrace _k^T[ {{M _x}} ]{\lbrace u \rbrace _k} = 1 $$
 
 This is a convenient way to identify the modal parameters, i.e. mode shapes, modal stiffness and modal damping of the structure.
 
 ${\{ u \}_k}$ - the mass normalized mode shape
 
-$$ \frac{\lbrace P \rbrace _k^T \lbrace P \rbrace _k }{m_{ q,k}} = \lbrace u \rbrace _k \lbrace u \rbrace _k^T = [R]_k $$
+$$ \frac{\lbrace P \rbrace _k^T \lbrace P \rbrace _k }{m_{ q,k}} = \lbrace u \rbrace _k \lbrace u \rbrace _k^T = [R] _k $$
 
 Where,
 
