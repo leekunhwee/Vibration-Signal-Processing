@@ -52,9 +52,9 @@ $$ {[H(s)]} = {\sum\limits _{k = 1}^n {{\frac{{\lbrace P \rbrace _k} {\lbrace P 
 
 Note that the modal mass for mode $k$ using the unscaled modal matrix is:
 
-$$ {m_{q,k}} = \lbrace P \rbrace _k^T[ {{M_x}} ]{\lbrace P \rbrace _k} $$
+$$ {m _{q,k}} = \lbrace P \rbrace _k^T[ {{M _x}} ]{\lbrace P \rbrace _k} $$
 
-Thus $ ({\lbrace P \rbrace _k^T{\lbrace P \rbrace _k}})/{m_{q,k}} $ represents the normalization of each eigenvector with the square root of the modal mass.
+Thus $ ({\lbrace P \rbrace _k^T{\lbrace P \rbrace _k}})/{m _{q,k}} $ represents the normalization of each eigenvector with the square root of the modal mass.
 
 $$ {\frac{\lbrace P \rbrace _k^T}{\sqrt {m _{\lbrace q _k \rbrace}}}}{[M _x]}{\frac{\lbrace P _k \rbrace}{\sqrt {m _{q _k}}}} = 1 $$
 
