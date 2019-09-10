@@ -56,7 +56,7 @@ $$ {m_{q,k}} = \{ P \}_k^T[ {{M_x}} ]{\{ P \}_k} $$
 
 Thus $ ({P_k^T{P_k}})/{m_{q,k}} $ represents the normalization of each eigenvector with the square root of the modal mass.
 
-$$ \frac{{\{ P \}_k^T}}{{\sqrt {{m_{{q_k}}}} }}[{M_x}]\frac{{{{\{ P \}}_k}}}{{\sqrt {{m_{{q_k}}}} }} = 1 $$
+$$ {\frac{P_k^T}{\sqrt {m_{q_k}}}}{[M_x]}{\frac{P_k}{\sqrt {m_{q_k}}}} = 1 $$
 
 $$ \{ u \}_k^T[ {{M_x}} ]{\{ u \}_k} = 1 $$
 
