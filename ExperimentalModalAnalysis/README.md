@@ -44,11 +44,13 @@ Where $n$ – number of modes.
 
 The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes and modal transfer functions.
 
-$$\{ X \} = \left( {\sum\limits_{k = 1}^n {{{\{ P \}}_k}\{ P \}_k^T{\Phi _{qk}}} } \right)\{ F \}$$
+$$\{ x \} = \left( {\sum\limits_{k = 1}^n {{{\{ P \}}_k}\{ P \}_k^T{\Phi _{qk}}} } \right)\{ F \}$$
 
 Thus,
 
 $$ \left[ {H(s)} \right]{\text{ = }}\sum\limits_{k = 1}^n {\frac{{{{\left\{ P \right\}}_k}\left\{ P \right\}_k^*}}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}}  = \sum\limits_{k = 1}^n {\frac{{{{\left[ R \right]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
+
+$$ [{H(s)}]=\sum\limits_{k = 1}^n {\frac{P_k P_k^*}{m_{q,k}} \frac{1}{{s^2+ 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}}  = \sum\limits_{k = 1}^n {\frac{{[R]}_k}{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}} $$
 
 Note that the modal mass for mode $k$ using the unscaled modal matrix is:
 
@@ -63,8 +65,6 @@ $$ \{ u \}_k^T[ {{M_x}} ]{\{ u \}_k} = 1 $$
 This is a convenient way to identify the modal parameters, i.e. mode shapes, modal stiffness and modal damping of the structure.
 
 ${\{ u \}_k}$ - the mass normalized mode shape
-
-$$ \frac{{\{ P \}_k^T{{\{ P \}}_k}}}{{{m_{{q_k}}}}} = {\{ u \}_k}\{ u \}_k^T = {[ R ]_k} $$
 
 $$ \frac{P_k^TP_k}{m_{q_k}} = u_ku_k^T = [R]_k $$
 
