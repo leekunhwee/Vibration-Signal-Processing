@@ -144,24 +144,17 @@ $$ {\Phi _{12}} = {\left( {\frac{{{u_{11}}{u_{21}}}}{{{s^2} + 2{\zeta _1}{\omega
 Again, substituting $ s \to j\omega $ and then $ω=ω_{n1}$, $ω=ω_{n2}$ and $ω=ω_{n3}$ subsequently, gives:
 
 $$
-\begin{array}{}
+\begin{array}\\
 {u_{21}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{12,1}}}}{{{u_{11}}}} & {u_{22}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{12,2}}}}{{{u_{12}}}} & {u_{23}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{12,3}}}}{{u_{13}}}
 \end{array}
 $$
 
 Similarly,
 $$
-\begin{array}{}
+\begin{array}\\
 {u_{31}} = \frac{{{-2}{\zeta _1}{\omega _{n1}^2}{H _{13,1}}}}{{{u _{11}}}} & {u _{32}} = \frac{{{-2}{\zeta _2}{\omega _{n2}^2}{H _{13,2}}}}{{{u _{12}}}} & {u _{33}} = \frac{{{-2}{\zeta _3}{\omega _{n3}^2}{H _{13,3}}}}{{u _{13}}} \\\\
 {u_{41}} = \frac{{{-2}{\zeta _1}{\omega _{n1}^2}{H _{14,1}}}}{{{u _{11}}}} & {u _{42}} = \frac{{{-2}{\zeta _2}{\omega _{n2}^2}{H _{14,2}}}}{{{u _{12}}}} & {u _{43}} = \frac{{{-2}{\zeta _3}{\omega _{n3}^2}{H _{14,3}}}}{{u _{13}}} \\\\
 {u_{51}} = \frac{{{-2}{\zeta _1}{\omega _{n1}^2}{H _{15,1}}}}{{{u _{11}}}} & {u _{52}} = \frac{{{-2}{\zeta _2}{\omega _{n2}^2}{H _{15,2}}}}{{{u _{12}}}} & {u _{53}} = \frac{{{-2}{\zeta _3}{\omega _{n3}^2}{H _{15,3}}}}{{u _{13}}}
-\end{array}
-$$
-
-
-$$
-\begin{array}\\
-{u_{31}} = \frac{{{-2}{\zeta _1}{\omega _{n1}^2}{H _{13,1}}}}{{{u _{11}}}} & {u _{32}} = \frac{{{-2}{\zeta _2}{\omega _{n2}^2}{H _{13,2}}}}{{{u _{12}}}} & {u _{33}} = \frac{{{-2}{\zeta _3}{\omega _{n3}^2}{H _{13,3}}}}{{u _{13}}}
 \end{array}
 $$
 
