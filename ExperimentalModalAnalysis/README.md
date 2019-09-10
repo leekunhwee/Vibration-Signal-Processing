@@ -25,16 +25,16 @@ $$[ {{M_q}} ]\lbrace {\ddot q} \rbrace + [ {{C_q}} ]\lbrace {\dot q} \rbrace + [
 
 Where the modal mass, modal damping and model stiffness are separately:
 
-$${[ M ]_q} = \{ P \}_k^T[ {{M_x}} ]{\{ P \}_k}$$
+$${[ M ]_q} = \lbrace P \rbrace _k^T[ {{M_x}} ]{\lbrace P \rbrace _k}$$
 
-$${[ C ]_q} = \{ P \}_k^T[ {{C_x}} ]{\{ P \}_k}$$
+$${[ C ]_q} = \lbrace P \rbrace _k^T[ {{C_x}} ]{\lbrace P \rbrace _k}$$
 
-$${[ K ]_q} = \{ P \}_k^T[ {{K_x}} ]{\{ P \}_k}$$
+$${[ K ]_q} = \lbrace P \rbrace _k^T[ {{K_x}} ]{\lbrace P \rbrace _k}$$
 
 And $\{ P \}_k  $ is the Eigenvector (mode shapes)
 The Frequency Response Function ($FRF$) of the system can be write as:
 
-$$ [ {H(s)} ] = \frac{{\{ {X(s)} \}}}{{\{ {F(s)} \}}} $$
+$$ [ {H(s)} ] = \frac{{\lbrace {X(s)} \rbrace}}{{\lbrace {F(s)} \rbrace}} $$
 
 The element in row $i$ and column $l$ of $\left[ {H\left( s \right)} \right]$ matrix may be given as residues form:
 
@@ -44,27 +44,27 @@ Where $n$ – number of modes.
 
 The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes $\{ P \}_k  $ and modal transfer functions $ \Phi _{q,k} $.
 
-$$\{ x \} = \left( {\sum\limits_{k = 1}^n {{{\{ P \}}_k}\{ P \}_k^T {\Phi _{qk}}} } \right)\{ F \}$$
+$$\lbrace x \rbrace = \left( {\sum\limits_{k = 1}^n {{{\lbrace P \rbrace}_k}\lbrace P \rbrace_k^T {\Phi _{qk}}} } \right)\lbrace F \rbrace$$
 
 Thus,
 
-$$ {[H(s)]} = {\sum\limits _{k = 1}^n {{\frac{{P _k} {P _k^*}}{m _{q,k}}}{\frac{1}{{{s^2}+ {2{\zeta _k}{\omega _{n,k}}s} + {\omega _{n,k} ^2}}}}}} = {\sum\limits _{k = 1}^n {\frac{[R] _k}{s^2 + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2 }}} $$
+$$ {[H(s)]} = {\sum\limits _{k = 1}^n {{\frac{{\lbrace P \rbrace _k} {\lbrace P  \rbrace _k^*}}{m _{q,k}}}{\frac{1}{{{s^2}+ {2{\zeta _k}{\omega _{n,k}}s} + {\omega _{n,k} ^2}}}}}} = {\sum\limits _{k = 1}^n {\frac{[R] _k}{s^2 + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2 }}} $$
 
 Note that the modal mass for mode $k$ using the unscaled modal matrix is:
 
-$$ {m_{q,k}} = \{ P \}_k^T[ {{M_x}} ]{\{ P \}_k} $$
+$$ {m_{q,k}} = \lbrace P \rbrace _k^T[ {{M_x}} ]{\lbrace P \rbrace _k} $$
 
 Thus $ ({P_k^T{P_k}})/{m_{q,k}} $ represents the normalization of each eigenvector with the square root of the modal mass.
 
-$$ {\frac{P_k^T}{\sqrt {m_{q_k}}}}{[M_x]}{\frac{P_k}{\sqrt {m_{q_k}}}} = 1 $$
+$$ {\frac{\lbrace P \rbrace _k^T}{\sqrt {m_{\lbrace q_k \rbrace}}}}{[M_x]}{\frac{\lbrace P_k \rbrace}{\sqrt {m_{q_k}}}} = 1 $$
 
-$$ \{ u \}_k^T[ {{M_x}} ]{\{ u \}_k} = 1 $$
+$$ \lbrace u \rbrace _k^T[ {{M_x}} ]{\lbrace u \rbrace _k} = 1 $$
 
 This is a convenient way to identify the modal parameters, i.e. mode shapes, modal stiffness and modal damping of the structure.
 
 ${\{ u \}_k}$ - the mass normalized mode shape
 
-$$ \frac{P_k^TP_k}{m_{q_k}} = u_ku_k^T = [R]_k $$
+$$ \frac{\lbrace P \rbrace _k^T \lbrace P \rbrace _k }{m_{ q,k}} = \lbrace u \rbrace _k \lbrace u \rbrace _k^T = [R]_k $$
 
 Where,
 
@@ -111,7 +111,7 @@ The transfer function ${\Phi _{11}}$is measured by hitting the structure at poin
 
 $$ \Phi  = G + jH $$
 
-Where, the $u_{11}u_{11}$ means the direct displacement response residues of point $1$ contributed by the first mode. E.g. for $u_{11}$, First subscript denote the measured or impact point, and Second subscript denote the modal number.
+<b> \color{red}{Where, the $u_{11}u_{11}$ means the direct displacement response residues of point $1$ contributed by the first mode. E.g. for $u_{11}$, First subscript denote the measured or impact point, and Second subscript denote the modal number.}</b>
 
 If let $ s \to j\omega $
 
