@@ -1,6 +1,11 @@
-# Experimental Modal Analysis (Impact Testing
-*（编辑公式时，如果公式中存在下划线前有空格，那么必须统一都包含空格，否则会出现无法显示的情况。）*
-*（想显示 $ \lbrace \rbrace  $，得用 \lbrace \rbrace 命令）*
+# Experimental Modal Analysis (Impact Testing)
+<font face="Times">
+<font color="black" size=4>
+
+* <table><tr><td bgcolor=orange>**（编辑公式时，如果公式中存在下划线前有空格，那么必须统一都包含空格，否则会出现无法显示的情况。）**</td></tr></table>
+* <table><tr><td bgcolor=orange>**（想显示 $ \lbrace \rbrace  $，得用 \lbrace \rbrace 命令）**</td></tr></table>
+
+
 
 Measured from the tool tip in axial $(z)$ direction, the approximate impact locations of the $5$ points are $0$, $55$, $90$, $130$ and $165$ mm. The vibration is measured at the tool tip (Point $1$) by an accelerometer.
 
@@ -204,7 +209,7 @@ p_3 =    [2.0023 &   0.4510 &  -0.1414 &  -0.2755 &  -0.3013]^T
 \end{cases}
 $$
 <br>
-First three modal shapes:
+Plot as:
 <div align = "center">
 <img src = "Modes1.png"  width = "600" height = "400" alt = "Modal shapes of Tool" title = "Modal shapes of Tool">
 </div>
