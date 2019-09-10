@@ -31,7 +31,7 @@ $${[ C ]_q} = \lbrace P \rbrace _k^T[ {{C_x}} ]{\lbrace P \rbrace _k}$$
 
 $${[ K ]_q} = \lbrace P \rbrace _k^T[ {{K_x}} ]{\lbrace P \rbrace _k}$$
 
-And $\{ P \}_k  $ is the Eigenvector (mode shapes)
+And $\lbrace P \rbrace _k  $ is the Eigenvector (mode shapes)
 The Frequency Response Function ($FRF$) of the system can be write as:
 
 $$ [ {H(s)} ] = \frac{{\lbrace {X(s)} \rbrace}}{{\lbrace {F(s)} \rbrace}} $$
@@ -42,7 +42,7 @@ $$ {h_{il}} = \sum\limits_{k = 1}^n {\left( {\frac{{{\alpha _{il,k}} + {\beta _{
 
 Where $n$ – number of modes.
 
-The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes $\{ P \}_k  $ and modal transfer functions $ \Phi _{q,k} $.
+The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes $\lbrace P \rbrace_k  $ and modal transfer functions $ \Phi _{q,k} $.
 
 $$\lbrace x \rbrace = \left( {\sum\limits_{k = 1}^n {{{\lbrace P \rbrace}_k}\lbrace P \rbrace_k^T {\Phi _{qk}}} } \right)\lbrace F \rbrace$$
 
@@ -54,7 +54,7 @@ Note that the modal mass for mode $k$ using the unscaled modal matrix is:
 
 $$ {m_{q,k}} = \lbrace P \rbrace _k^T[ {{M_x}} ]{\lbrace P \rbrace _k} $$
 
-Thus $ ({P_k^T{P_k}})/{m_{q,k}} $ represents the normalization of each eigenvector with the square root of the modal mass.
+Thus $ ({\lbrace P \rbrace _k^T{\lbrace P \rbrace _k}})/{m_{q,k}} $ represents the normalization of each eigenvector with the square root of the modal mass.
 
 $$ {\frac{\lbrace P \rbrace _k^T}{\sqrt {m _{\lbrace q _k \rbrace}}}}{[M _x]}{\frac{\lbrace P _k \rbrace}{\sqrt {m _{q _k}}}} = 1 $$
 
@@ -62,9 +62,9 @@ $$ \lbrace u \rbrace _k^T[ {{M _x}} ]{\lbrace u \rbrace _k} = 1 $$
 
 This is a convenient way to identify the modal parameters, i.e. mode shapes, modal stiffness and modal damping of the structure.
 
-${\{ u \}_k}$ - the mass normalized mode shape
+${\lbrace u \rbrace_k}$ - the mass normalized mode shape
 
-$$ \frac{\lbrace P \rbrace _k^T \lbrace P \rbrace _k }{m_{ q,k}} = \lbrace u \rbrace _k \lbrace u \rbrace _k^T = [R] _k $$
+$$ \frac{\lbrace P \rbrace _k^T \lbrace P \rbrace _k }{m _{ q,k}} = \lbrace u \rbrace _k \lbrace u \rbrace _k^T = [R] _k $$
 
 Where,
 
