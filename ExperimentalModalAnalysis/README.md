@@ -1,11 +1,7 @@
 # Experimental Modal Analysis (Impact Testing)
-<font face="Times">
-<font color="black" size=4>
 
-* <table><tr><td bgcolor=orange>**（编辑公式时，如果公式中存在下划线前有空格，那么必须统一都包含空格，否则会出现无法显示的情况。）**</td></tr></table>
-* <table><tr><td bgcolor=orange>**（想显示 $ \lbrace \rbrace  $，得用 \lbrace \rbrace 命令）**</td></tr></table>
-
-
+* <table><tr><td>（编辑公式时，如果公式中存在下划线前有空格，那么必须统一都包含空格，否则会出现无法显示的情况。）</td></tr></table>
+* <table><tr><td>（想显示 $ \lbrace \rbrace  $，得用 \lbrace \rbrace 命令）</td></tr></table>
 
 Measured from the tool tip in axial $(z)$ direction, the approximate impact locations of the $5$ points are $0$, $55$, $90$, $130$ and $165$ mm. The vibration is measured at the tool tip (Point $1$) by an accelerometer.
 
@@ -18,7 +14,7 @@ In the five .txt files, the first column of each file is the frequency $\text{[H
 
 
 For multi-degree freedom systems, the equation of motion in local coordinate system is given as:
-$$m\ddot x = F - c\dot x - kx$$
+$$m\ddot x + c\dot x + kx = F $$
 
 or in matrix from:
 
