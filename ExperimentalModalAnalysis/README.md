@@ -158,6 +158,13 @@ $$
 \end{array}
 $$
 
+
+$$
+\begin{array}\\
+{u_{31}} = \frac{{{-2}{\zeta _1}{\omega _{n1}^2}{H _{13,1}}}}{{{u _{11}}}} & {u _{32}} = \frac{{{-2}{\zeta _2}{\omega _{n2}^2}{H _{13,2}}}}{{{u _{12}}}} & {u _{33}} = \frac{{{-2}{\zeta _3}{\omega _{n3}^2}{H _{13,3}}}}{{u _{13}}}
+\end{array}
+$$
+
 $$ u_{53} = \frac{{{-2}{\zeta _3}{\omega _{n3}^2}{H _{15,3}}}}{{u _{13}}} $$
 
 The real and imaginary parts of the $FRFs$ are used to identify the modal parameters. In the imaginary part of the $FRF$ - the peaks correspond to the natural frequencies $ω_{nk}$. The difference between the frequencies of local maximum $(ω_{1k})$ and minimum $(ω_{2k})$ values on the real part of the $FRF$ is used to determine the modal damping ratio as follows:
