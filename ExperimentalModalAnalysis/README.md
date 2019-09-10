@@ -1,14 +1,14 @@
 # Experimental Modal Analysis (Impact Testing
-*（编辑公式时，如果存在下划线前有空格，那么必须统一都包含空格，否则会出现无法显示的情况。）*
+*（编辑公式时，如果公式中存在下划线前有空格，那么必须统一都包含空格，否则会出现无法显示的情况。）*
 
 Measured from the tool tip in axial $(z)$ direction, the approximate impact locations of the $5$ points are $0$, $55$, $90$, $130$ and $165$ mm. The vibration is measured at the tool tip (Point $1$) by an accelerometer.
-
+$$ \left\{    \right\}$$
 <div align = "center">
 <img src = "Tool.png"  width = "250" height = "200" alt = "Points on the Tool" title = "Points on the Tool">
 </div>
 <p align = "center"><b>Points on the Tool</b></p>
 
-In the five .txt files, the first column of each file is the frequency [Hz], second column is the real part of the computed $FRF$ [m/N], and the third column is the imaginary part of the computed $FRF$ [m/N].
+In the five .txt files, the first column of each file is the frequency $\text{[Hz]}$, second column is the real part of the computed $FRF$ $\text{[m/N]}$, and the third column is the imaginary part of the computed $FRF$ $\text{[m/N]}$.
 
 
 For multi-degree freedom systems, the equation of motion in local coordinate system is given as:
@@ -116,7 +116,7 @@ If let $ s \to j\omega $
 
 $$ {\Phi _{11}} = {\left( {\frac{{{u _{11}}{u _{11}}}}{{{\omega ^2} + j2{\zeta _1}{\omega _{n1}}\omega  - \omega _{n1}^2}}} \right) _{mode\ 1}} + {\left( {\frac{{{u _{12}}{u _{12}}}}{{{\omega ^2} + j2{\zeta _2}{\omega _{n2}}\omega - \omega _{n2}^2}}} \right) _{mode\ 2}} + {\left( {\frac{{{u _{13}}{u _{13}}}}{{{\omega ^2} + j2{\zeta _3}{\omega _{n3}}\omega - \omega _{n3}^2}}} \right) _{mode\ 3}} $$
 
-When $ω=ω_{n1}$ , leads to a negligible contribution from ωn2 and ωn3, and the first part become equal to:
+When $ω=ω_{n1}$ , leads to a negligible contribution from $ω_{n2}$ and $ω_{n3}$, and the first part become equal to:
 
 $$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx {\left( {\frac{{{u _{11}}{u _{11}}}}{{\omega _{n1}^2 + j2{\zeta _1}{\omega _{n1}}{\omega _{n1}} - \omega _{n1}^2}}} \right) _{mode\ 1}} $$
 
@@ -185,7 +185,7 @@ The value of the measurement points are given in the table.
 
 $$
 \begin{array}{c|lcr}
-φ(μm/N) & \text{R(1031)} & \text{R(1104)} & \text{I(1074)}& \text{R(1914)} & \text{R(2092)} & \text{I(1961)} & \text{R(2546)} & \text{R(2783)} & \text{I(2617)}\\\\
+φ\text{(μm/N)} & \text{R(1031)} & \text{R(1104)} & \text{I(1074)}& \text{R(1914)} & \text{R(2092)} & \text{I(1961)} & \text{R(2546)} & \text{R(2783)} & \text{I(2617)}\\\\
 \hline
 H_{11} & 0.4049 & -0.2891 & -0.6433 & 0.1609 & -0.0588 & -0.2138 & 0.1084 & -0.1173 & -0.2180 \\\\
 H_{12} & 0.2244 & -0.2384 & -0.4380 & 0.0322 & -0.0355 & -0.0879 & 0.0009 & -0.0451 & -0.0491 \\\\
