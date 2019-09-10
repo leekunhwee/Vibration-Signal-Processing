@@ -145,7 +145,7 @@ Again, substituting $ s \to j\omega $ and then $ω=ω_{n1}$, $ω=ω_{n2}$ and $�
 
 $$
 \begin{array}\\
-{u_{21}} = \frac{{{-2}{\zeta _1}{\omega _{n1}^2}{H_{12,1}}}}{{{u_{11}}}} & {u_{22}} = \frac{{{-2}{\zeta _2}{\omega _{n2}^2}{H_{12,2}}}}{{{u_{12}}}} & {u_{23}} = \frac{{{-2}{\zeta _3}{\omega _{n3}^2}{H_{12,3}}}}{{u_{13}}}
+{u_{21}} = \frac{{{-2}{\zeta _1}{\omega _{n1}^2}{H _{12,1}}}}{{{u _{11}}}} & {u _{22}} = \frac{{{-2}{\zeta _2}{\omega _{n2}^2}{H _{12,2}}}}{{{u _{12}}}} & {u _{23}} = \frac{{{-2}{\zeta _3}{\omega _{n3}^2}{H _{12,3}}}}{{u _{13}}}
 \end{array}
 $$
 
@@ -167,8 +167,6 @@ $$
 {u_{51}} = \frac{{{-2}{\zeta _1}{\omega _{n1}^2}{H _{15,1}}}}{{{u _{11}}}} & {u _{52}} = \frac{{{-2}{\zeta _2}{\omega _{n2}^2}{H _{15,2}}}}{{{u _{12}}}} & {u _{53}} = \frac{{{-2}{\zeta _3}{\omega _{n3}^2}{H _{15,3}}}}{{u _{13}}}
 \end{array}
 $$
-
-$$ u_{53} = \frac{{{-2}{\zeta _3}{\omega _{n3}^2}{H _{15,3}}}}{{u _{13}}} $$
 
 The real and imaginary parts of the $FRFs$ are used to identify the modal parameters. In the imaginary part of the $FRF$ - the peaks correspond to the natural frequencies $ω_{nk}$. The difference between the frequencies of local maximum $(ω_{1k})$ and minimum $(ω_{2k})$ values on the real part of the $FRF$ is used to determine the modal damping ratio as follows:
 
