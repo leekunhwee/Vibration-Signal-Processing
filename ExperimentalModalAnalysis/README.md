@@ -53,7 +53,7 @@ Note that the modal mass for mode k using the unscaled modal matrix is:
 
 $$ {m_{q,k}} = \{ P \}_k^T[ {{M_x}} ]{\{ P \}_k} $$
 
-Thus $ \left({ P_k^T{{ P }_k}} \right)/{m_{q,k}} $ represents the normalization of each eigenvector with the square root of the modal mass.
+Thus $ ({P_k^T{P_k}})/{m_{q,k}} $ represents the normalization of each eigenvector with the square root of the modal mass.
 
 $$ \frac{{\{ P \}_k^T}}{{\sqrt {{m_{{q_k}}}} }}[ {{M_x}} ]\frac{{{{\{ P \}}_k}}}{{\sqrt {{m_{{q_k}}}} }} = 1 $$
 
