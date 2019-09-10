@@ -46,7 +46,7 @@ The mode shapes are found from the estimated residues. Displacement vector can b
 $$\{ X \} = \left( {\sum\limits_{k = 1}^n {{{\{ P \}}_k}\{ P \}_k^T{\Phi _{qk}}} } \right)\{ F \}$$
 
 Thus,
-$$ [ {H(s)}]{\rm{ = }}\sum\limits_{k = 1}^n {\frac{{{{\{ P \}}_k}\{ P \}_k^*}}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} = \sum\limits_{k = 1}^n {\frac{{{{[ R ]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
+$$ [ {H(s)}] = \sum\limits_{k=1}^n {\frac{{P_k}{P}_k^*}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} = \sum\limits_{k = 1}^n {\frac{{{{[ R ]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
 
 Note that the modal mass for mode k using the unscaled modal matrix is:
 
@@ -138,7 +138,7 @@ $$ {u_{13}} = \sqrt { - 2{\zeta _3}\omega _{n3}^2{H_{11,3}}} $$
 
 Similarly,
 $$ {\Phi _{12}} = {\left( {\frac{{{u_{11}}{u_{21}}}}{{{s^2} + 2{\zeta _1}{\omega _{n1}}s + \omega _{n1}^2}}} \right)_{\bmod e\# 1}} + {\left( {\frac{{{u_{12}}{u_{22}}}}{{{s^2} + 2{\zeta _2}{\omega _{n2}}s + \omega _{n2}^2}}} \right)_{\bmod e\# 2}} + {\left( {\frac{{{u_{13}}{u_{23}}}}{{{s^2} + 2{\zeta _3}{\omega _{n3}}s + \omega _{n3}^2}}} \right)_{\bmod e\# 3}} $$
-Again, substituting $ s \to j\omega $ and then ω=ωn1, ω=ωn2 and ω=ωn3 subsequently, gives: 
+Again, substituting $ s \to j\omega $ and then ω=ωn1, ω=ωn2 and ω=ωn3 subsequently, gives:
 $ {u_{21}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{12,1}}}}{{{u_{11}}}} $ ; $ {u_{22}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{12,2}}}}{{{u_{12}}}} $; $ {u_{23}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{12,3}}}}{{{u_{13}}}} $
 
 Similarly,
@@ -156,16 +156,25 @@ And
 $$ {c_k} = 2{\zeta _k}\sqrt {{k_k}{m_k}} $$
 The value of the measurement points are given in the table.
 
-φ(μm/N)	R(1031)	R(1104)	I(1074)	R(1914)	R(2092)	I(1961)	R(2546)	R(2783)	I(2617)
-H11	0.4049	-0.2891	-0.6433	0.1609	-0.0588	-0.2138	 0.1084	-0.1173	-0.2180
-H12	0.2244	-0.2384	-0.4380	0.0322	-0.0355	-0.0879	 0.0009	-0.0451	-0.0491
-H13	0.1470	-0.1814	-0.3077	-0.0108	-0.0274	-0.0228	-0.0240	 0.0014	 0.0154
-H14	0.0994	-0.1344	-0.2158	-0.0252	-0.0016	 0.0166	-0.0205	 0.0091	 0.0300
-H15	0.0730	-0.0947	-0.1566	-0.0282	 0.0037	 0.0266	-0.0163	 0.0143	 0.0328
 
-p1 =    [1.4111    0.9608    0.6749    0.4734    0.3435]T
-p2 =    [1.7165    0.7057    0.1830   -0.1333   -0.2136]T
-p3 =    [2.0023    0.4510   -0.1414   -0.2755   -0.3013]T
+$$
+\begin{array}{c|lcr}
+φ(μm/N) & \text{R(1031)} & \text{R(1104)} & \text{I(1074)}& \text{R(1914)} & \text{R(2092)} & \text{I(1961)} & \text{R(2546)} & \text{R(2783)} & \text{I(2617)}\\
+\hline
+H11 & 0.4049 & -0.2891 & -0.6433 & 0.1609 & -0.0588 & -0.2138 & 0.1084 & -0.1173 & -0.2180 \\
+H12 & 0.2244 & -0.2384 & -0.4380 & 0.0322 & -0.0355 & -0.0879 & 0.0009 & -0.0451 & -0.0491 \\
+H13 & 0.1470 & -0.1814 & -0.3077 & -0.0108 & -0.0274 & -0.0228 & -0.0240 & 0.0014 & 0.0154 \\
+H14 & 0.0994 & -0.1344 & -0.2158 & -0.0252 & -0.0016 &  0.0166 & -0.0205 &  0.0091 & 0.0300 \\
+H15 & 0.0730 & -0.0947 & -0.1566 & -0.0282 & 0.0037 & 0.0266 & -0.0163 & 0.0143 & 0.0328
+\end{array}
+$$
+
+$$\begin{cases}
+p1 =    [1.4111 &   0.9608 &  \ \ \  0.6749 &  \ \ \ 0.4734 & \ \ \  0.3435]^T \\
+p2 =    [1.7165 &   0.7057 &  \ \ \  0.1830 &  -0.1333 &  -0.2136]^T \\
+p3 =    [2.0023 &   0.4510 &  -0.1414 &  -0.2755 &  -0.3013]^T
+\end{cases}
+$$
 
 <br>
 <div align = "center">
