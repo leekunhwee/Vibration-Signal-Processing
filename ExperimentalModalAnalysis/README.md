@@ -2,12 +2,10 @@
 
 Measured from the tool tip in axial $(z)$ direction, the approximate impact locations of the $5$ points are $0$, $55$, $90$, $130$ and $165$ mm. The vibration is measured at the tool tip (Point $1$) by an accelerometer.
 
-<br>
 <div align = "center">
 <img src = "Tool.png"  width = "250" height = "200" alt = "Points on the Tool" title = "Points on the Tool">
 </div>
 <p align = "center"><b>Points on the Tool</b></p>
-<br>
 
 In the five .txt files, the first column of each file is the frequency [Hz], second column is the real part of the computed $FRF$ [m/N], and the third column is the imaginary part of the computed $FRF$ [m/N].
 
@@ -58,7 +56,7 @@ $$ {m_{q,k}} = \{ P \}_k^T[ {{M_x}} ]{\{ P \}_k} $$
 
 Thus $ ({P_k^T{P_k}})/{m_{q,k}} $ represents the normalization of each eigenvector with the square root of the modal mass.
 
-$$ \frac{{\left\{ P \right\}_k^T}}{{\sqrt {{m_{{q_k}}}} }}\left[ {{M_x}} \right]\frac{{{{\left\{ P \right\}}_k}}}{{\sqrt {{m_{{q_k}}}} }} = 1 $$
+$$ \frac{{\{ P \}_k^T}}{{\sqrt {{m_{{q_k}}}} }}[{M_x}]\frac{{{{\{ P \}}_k}}}{{\sqrt {{m_{{q_k}}}} }} = 1 $$
 
 $$ \{ u \}_k^T[ {{M_x}} ]{\{ u \}_k} = 1 $$
 
