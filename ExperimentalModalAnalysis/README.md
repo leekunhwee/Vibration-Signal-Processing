@@ -9,8 +9,7 @@ Measured from the tool tip in axial (z) direction, the approximate impact locati
 <p align = "center"><b>Points on the Tool</b></p>
 <br>
 
-In the five .txt files, the first column of each file is the frequency [Hz], second column is the real part of the computed FRF [m/N], and the third column is the imaginary part of the computed FRF
-[m/N].
+In the five .txt files, the first column of each file is the frequency [Hz], second column is the real part of the computed $FRF$ [m/N], and the third column is the imaginary part of the computed $FRF$ [m/N].
 
 
 For multi-degree freedom systems, the equation of motion in local coordinate system is given as:
@@ -33,18 +32,18 @@ $${[ C ]_q} = \{ P \}_k^T[ {{C_x}} ]{\{ P \}_k}$$
 $${[ K ]_q} = \{ P \}_k^T[ {{K_x}} ]{\{ P \}_k}$$
 
 And $\{ P \}_k  $ is the Eigenvector (mode shapes)
-The Frequency Response Function (FRF) of the system can be write as:
+The Frequency Response Function ($FRF$) of the system can be write as:
 $$ [ {H(s)} ] = \frac{{\{ {X(s)} \}}}{{\{ {F(s)} \}}} $$
 
-The element in row i and column l of $\left[ {H\left( s \right)} \right]$ matrix may be given as residues form:
+The element in row $i$ and column $l$ of $\left[ {H\left( s \right)} \right]$ matrix may be given as residues form:
 
 $$ {h_{il}} = \sum\limits_{k = 1}^n {\left( {\frac{{{\alpha _{il,k}} + {\beta _{il,k}}s}}{{{s^2} + 2{\xi _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} \right)} $$
 
-Where n – number of modes.
+Where $n$ – number of modes.
 
 The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes and modal transfer functions.
 
-$$ \{ X \} = \left( {{{\sum\limits_{k = 1}^n {[ P ]_k}[ P ]_k^T [\Phi]}}_{qk}} \right) \{ F \} $$
+$$\{ X \} = \left( {\sum\limits_{k = 1}^n {{{\{ P \}}_k}\{ P \}_k^T{\Phi _{qk}}} } \right)\{ F \}$$
 
 Thus,
 $$ [ {H(s)}]{\rm{ = }}\sum\limits_{k = 1}^n {\frac{{{{\{ P \}}_k}\{ P \}_k^*}}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} = \sum\limits_{k = 1}^n {\frac{{{{[ R ]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
