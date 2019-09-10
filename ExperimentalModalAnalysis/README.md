@@ -123,35 +123,40 @@ $$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx {\left( {\frac{
 
 So we have:
 
-$$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx j{H_{11,1}} = {\left( {\frac{{{u_{11}}{u_{11}}}}{{j2{\zeta _1}\omega _{n1}^2}}} \right)_{\bmod e\# 1}} $$
+$$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx j{H_{11,1}} = {\left( {\frac{{{u_{11}}{u_{11}}}}{{j2{\zeta _1}\omega _{n1}^2}}} \right)_{mode\ 1}} $$
 
 $$ {u_{11}} = \sqrt { - 2{\zeta _1}\omega _{n1}^2{H_{11,1}}} $$
 
-Similarly, when ω=ωn2  and ω=ωn3,
+Similarly, when $ω=ω_{n2}$  and $ω=ω_{n3}$,
 
-$$ {\Phi _{11}}\left( {\omega  = {\omega _{n2}}} \right) \approx j{H_{11,2}} = {\left( {\frac{{{u_{12}}{u_{12}}}}{{j2{\zeta _2}\omega _{n2}^2}}} \right)_{\bmod e\# 2}} $$
+$$ {\Phi _{11}}\left( {\omega  = {\omega _{n2}}} \right) \approx j{H_{11,2}} = {\left( {\frac{{{u_{12}}{u_{12}}}}{{j2{\zeta _2}\omega _{n2}^2}}} \right)_{mode\ 2}} $$
 
 $$ {u_{12}} = \sqrt { - 2{\zeta _2}\omega _{n2}^2{H_{11,2}}} $$
 
-$$ {\Phi _{11}}\left( {\omega  = {\omega _{n3}}} \right) \approx j{H_{11,3}} = {\left( {\frac{{{u_{13}}{u_{13}}}}{{j2{\zeta _3}\omega _{n3}^2}}} \right)_{\bmod e\# 3}} $$
+$$ {\Phi _{11}}\left( {\omega  = {\omega _{n3}}} \right) \approx j{H_{11,3}} = {\left( {\frac{{{u_{13}}{u_{13}}}}{{j2{\zeta _3}\omega _{n3}^2}}} \right)_{mode\ 3}} $$
 
 $$ {u_{13}} = \sqrt { - 2{\zeta _3}\omega _{n3}^2{H_{11,3}}} $$
 
 Similarly,
 
-$$ {\Phi _{12}} = {\left( {\frac{{{u_{11}}{u_{21}}}}{{{s^2} + 2{\zeta _1}{\omega _{n1}}s + \omega _{n1}^2}}} \right)_{\bmod e\# 1}} + {\left( {\frac{{{u_{12}}{u_{22}}}}{{{s^2} + 2{\zeta _2}{\omega _{n2}}s + \omega _{n2}^2}}} \right)_{\bmod e\# 2}} + {\left( {\frac{{{u_{13}}{u_{23}}}}{{{s^2} + 2{\zeta _3}{\omega _{n3}}s + \omega _{n3}^2}}} \right)_{\bmod e\# 3}} $$
+$$ {\Phi _{12}} = {\left( {\frac{{{u_{11}}{u_{21}}}}{{{s^2} + 2{\zeta _1}{\omega _{n1}}s + \omega _{n1}^2}}} \right)_{mode\ 1}} + {\left( {\frac{{{u_{12}}{u_{22}}}}{{{s^2} + 2{\zeta _2}{\omega _{n2}}s + \omega _{n2}^2}}} \right)_{mode\ 2}} + {\left( {\frac{{{u_{13}}{u_{23}}}}{{{s^2} + 2{\zeta _3}{\omega _{n3}}s + \omega _{n3}^2}}} \right)_{mode\ 3}} $$
 
-Again, substituting $ s \to j\omega $ and then ω=ωn1, ω=ωn2 and ω=ωn3 subsequently, gives:
+Again, substituting $ s \to j\omega $ and then $ω=ω_{n1}$, $ω=ω_{n2}$ and $ω=ω_{n3}$ subsequently, gives:
 
-$ {u_{21}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{12,1}}}}{{{u_{11}}}} $ ; $ {u_{22}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{12,2}}}}{{{u_{12}}}} $; $ {u_{23}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{12,3}}}}{{{u_{13}}}} $
+$$
+\begin{array}{}
+{u_{21}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{12,1}}}}{{{u_{11}}}} & {u_{22}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{12,2}}}}{{{u_{12}}}} & {u_{23}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{12,3}}}}{{{u_{13}}}}
+\end{array}
+$$
 
 Similarly,
-
-$ {u_{31}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{13,1}}}}{{{u_{11}}}} $; $ {u_{32}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{13,2}}}}{{{u_{12}}}} $; $ {u_{33}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{13,3}}}}{{{u_{13}}}} $
-
-$ {u_{41}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{14,1}}}}{{{u_{11}}}} $; $ {u_{42}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{14,2}}}}{{{u_{12}}}} $; $ {u_{43}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{14,3}}}}{{{u_{13}}}} $
-
-$ {u_{51}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{15,1}}}}{{{u_{11}}}} $; $ {u_{52}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{15,2}}}}{{{u_{12}}}} $; $ {u_{53}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{15,3}}}}{{{u_{13}}}} $
+$$
+\begin{array}{}
+{u_{31}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{13,1}}}}{{{u_{11}}}} & {u_{32}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{13,2}}}}{{{u_{12}}}} & {u_{33}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{13,3}}}}{{{u_{13}}}} \\\\
+{u_{41}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{14,1}}}}{{{u_{11}}}} & {u_{42}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{14,2}}}}{{{u_{12}}}} & {u_{43}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{14,3}}}}{{{u_{13}}}} \\\\
+{u_{51}} = \frac{{ - 2{\zeta _1}\omega _{n1}^2{H_{15,1}}}}{{{u_{11}}}} & {u_{52}} = \frac{{ - 2{\zeta _2}\omega _{n2}^2{H_{15,2}}}}{{{u_{12}}}} & {u_{53}} = \frac{{ - 2{\zeta _3}\omega _{n3}^2{H_{15,3}}}}{{{u_{13}}}}
+\end{array}
+$$
 
 The real and imaginary parts of the $FRFs$ are used to identify the modal parameters. In the imaginary part of the $FRF$ - the peaks correspond to the natural frequencies $ω_{nk}$. The difference between the frequencies of local maximum $(ω_{1k})$ and minimum $(ω_{2k})$ values on the real part of the $FRF$ is used to determine the modal damping ratio as follows:
 
