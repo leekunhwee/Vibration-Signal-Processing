@@ -33,6 +33,7 @@ $${[ K ]_q} = \{ P \}_k^T[ {{K_x}} ]{\{ P \}_k}$$
 
 And $\{ P \}_k  $ is the Eigenvector (mode shapes)
 The Frequency Response Function ($FRF$) of the system can be write as:
+
 $$ [ {H(s)} ] = \frac{{\{ {X(s)} \}}}{{\{ {F(s)} \}}} $$
 
 The element in row $i$ and column $l$ of $\left[ {H\left( s \right)} \right]$ matrix may be given as residues form:
@@ -47,7 +48,7 @@ $$\{ X \} = \left( {\sum\limits_{k = 1}^n {{{\{ P \}}_k}\{ P \}_k^T{\Phi _{qk}}}
 
 Thus,
 
-$$ [{H(s)}] = \sum\limits_{k=1}^n {{\frac{{P_k}{P_k^*}}{{m_{q,k}}}\frac{1}{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} = \sum\limits_{k=1}^n {\frac{{[ R ]}_k}{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}} $$
+$$ \left[ {H(s)} \right]{\text{ = }}\sum\limits_{k = 1}^n {\frac{{{{\left\{ P \right\}}_k}\left\{ P \right\}_k^*}}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}}  = \sum\limits_{k = 1}^n {\frac{{{{\left[ R \right]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
 
 Note that the modal mass for mode $k$ using the unscaled modal matrix is:
 
@@ -55,7 +56,7 @@ $$ {m_{q,k}} = \{ P \}_k^T[ {{M_x}} ]{\{ P \}_k} $$
 
 Thus $ ({P_k^T{P_k}})/{m_{q,k}} $ represents the normalization of each eigenvector with the square root of the modal mass.
 
-$$ \frac{{\{ P \}_k^T}}{{\sqrt {{m_{{q_k}}}} }}[ {{M_x}} ]\frac{{{{\{ P \}}_k}}}{{\sqrt {{m_{{q_k}}}} }} = 1 $$
+$$ \frac{{\left\{ P \right\}_k^T}}{{\sqrt {{m_{{q_k}}}} }}\left[ {{M_x}} \right]\frac{{{{\left\{ P \right\}}_k}}}{{\sqrt {{m_{{q_k}}}} }} = 1 $$
 
 $$ \{ u \}_k^T[ {{M_x}} ]{\{ u \}_k} = 1 $$
 
@@ -179,7 +180,7 @@ H14 & 0.0994 & -0.1344 & -0.2158 & -0.0252 & -0.0016 &  0.0166 & -0.0205 &  0.00
 H15 & 0.0730 & -0.0947 & -0.1566 & -0.0282 & 0.0037 & 0.0266 & -0.0163 & 0.0143 & 0.0328
 \end{array}
 $$
-
+<br>
 $$\begin{cases}
 p1 =    [1.4111 &   0.9608 &  \ \ \  0.6749 &  \ \ \ 0.4734 & \ \ \  0.3435]^T \\\\
 p2 =    [1.7165 &   0.7057 &  \ \ \  0.1830 &  -0.1333 &  -0.2136]^T \\\\
