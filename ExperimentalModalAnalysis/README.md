@@ -1,5 +1,5 @@
 # Experimental Modal Analysis (Impact Testing
-*{编辑公式时，如果存在下划线前有空格，那么必须统一都包含空格，否则会出现无法显示的情况。）*
+*（编辑公式时，如果存在下划线前有空格，那么必须统一都包含空格，否则会出现无法显示的情况。）*
 
 Measured from the tool tip in axial $(z)$ direction, the approximate impact locations of the $5$ points are $0$, $55$, $90$, $130$ and $165$ mm. The vibration is measured at the tool tip (Point $1$) by an accelerometer.
 
@@ -138,7 +138,7 @@ $$ {u _{13}} = \sqrt { - 2{\zeta _3}\omega _{n3}^2{H _{11,3}}} $$
 
 Similarly,
 
-$$ {\Phi _{12}} = {\left( {\frac{{{u_{11}}{u_{21}}}}{{{s^2} + 2{\zeta _1}{\omega _{n1}}s + \omega _{n1}^2}}} \right)_{mode\ 1}} + {\left( {\frac{{{u_{12}}{u_{22}}}}{{{s^2} + 2{\zeta _2}{\omega _{n2}}s + \omega _{n2}^2}}} \right)_{mode\ 2}} + {\left( {\frac{{{u_{13}}{u_{23}}}}{{{s^2} + 2{\zeta _3}{\omega _{n3}}s + \omega _{n3}^2}}} \right)_{mode\ 3}} $$
+$$ {\Phi _{12}} = {\left( {\frac{{{u _{11}}{u _{21}}}}{{{s^2} + 2{\zeta _1}{\omega _{n1}}s + \omega _{n1}^2}}} \right) _{mode\ 1}} + {\left( {\frac{{{u _{12}}{u _{22}}}}{{{s^2} + 2{\zeta _2}{\omega _{n2}}s + \omega _{n2}^2}}} \right) _{mode\ 2}} + {\left( {\frac{{{u _{13}}{u_{23}}}}{{{s^2} + 2{\zeta _3}{\omega _{n3}}s + \omega _{n3}^2}}} \right) _{mode\ 3}} $$
 
 Again, substituting $ s \to j\omega $ and then $ω=ω_{n1}$, $ω=ω_{n2}$ and $ω=ω_{n3}$ subsequently, gives:
 
