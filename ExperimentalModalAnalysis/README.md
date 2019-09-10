@@ -47,9 +47,9 @@ $$\{ X \} = \left( {\sum\limits_{k = 1}^n {{{\{ P \}}_k}\{ P \}_k^T{\Phi _{qk}}}
 
 Thus,
 
-$$ [ {H(s)}] = \sum\limits_{k=1}^n {\frac{{P_k}{P}_k^*}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} = \sum\limits_{k = 1}^n {\frac{{{{[ R ]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
+$$ [{H(s)}] = \sum\limits_{k=1}^n {\frac{{P_k}{P_k^*}}{{m_{q,k}}}\frac{1}{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}} = \sum\limits_{k = 1}^n {\frac{{[ R ]}_k}{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}} $$
 
-Note that the modal mass for mode k using the unscaled modal matrix is:
+Note that the modal mass for mode $k$ using the unscaled modal matrix is:
 
 $$ {m_{q,k}} = \{ P \}_k^T[ {{M_x}} ]{\{ P \}_k} $$
 
