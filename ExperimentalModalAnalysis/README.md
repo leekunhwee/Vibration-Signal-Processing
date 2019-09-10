@@ -1,6 +1,6 @@
 # Experimental Modal Analysis
 
-Measured from the tool tip in axial (z) direction, the approximate impact locations of the 5 points are 0, 55, 90, 130 and 165 mm. The vibration is measured at the tool tip (Point 1) by an accelerometer.
+Measured from the tool tip in axial $(z)$ direction, the approximate impact locations of the 5 points are $0$, $55$, $90$, $130$ and $165$ mm. The vibration is measured at the tool tip (Point $1$) by an accelerometer.
 
 <br>
 <div align = "center">
@@ -46,6 +46,7 @@ The mode shapes are found from the estimated residues. Displacement vector can b
 $$\{ X \} = \left( {\sum\limits_{k = 1}^n {{{\{ P \}}_k}\{ P \}_k^T{\Phi _{qk}}} } \right)\{ F \}$$
 
 Thus,
+
 $$ [ {H(s)}] = \sum\limits_{k=1}^n {\frac{{P_k}{P}_k^*}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} = \sum\limits_{k = 1}^n {\frac{{{{[ R ]}_k}}}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
 
 Note that the modal mass for mode k using the unscaled modal matrix is:
