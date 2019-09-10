@@ -138,7 +138,7 @@ $$ {u _{13}} = \sqrt { - 2{\zeta _3}\omega _{n3}^2{H _{11,3}}} $$
 
 Similarly,
 
-$$ {\Phi _{12}} = {\left( {\frac{{{u _{11}}{u _{21}}}}{{{s^2} + 2{\zeta _1}{\omega _{n1}}s + \omega _{n1}^2}}} \right) _{mode\ 1}} + {\left( {\frac{{{u _{12}}{u _{22}}}}{{{s^2} + 2{\zeta _2}{\omega _{n2}}s + \omega _{n2}^2}}} \right) _{mode\ 2}} + {\left( {\frac{{{u _{13}}{u_{23}}}}{{{s^2} + 2{\zeta _3}{\omega _{n3}}s + \omega _{n3}^2}}} \right) _{mode\ 3}} $$
+$$ {\Phi _{12}} = {\left( {\frac{{{u _{11}}{u _{21}}}}{{{s^2} + 2{\zeta _1}{\omega _{n1}}s + \omega _{n1}^2}}} \right) _{mode\ 1}} + {\left( {\frac{{{u _{12}}{u _{22}}}}{{{s^2} + 2{\zeta _2}{\omega _{n2}}s + \omega _{n2}^2}}} \right) _{mode\ 2}} + {\left( {\frac{{{u _{13}}{u _{23}}}}{{{s^2} + 2{\zeta _3}{\omega _{n3}}s + \omega _{n3}^2}}} \right) _{mode\ 3}} $$
 
 Again, substituting $ s \to j\omega $ and then $ω=ω_{n1}$, $ω=ω_{n2}$ and $ω=ω_{n3}$ subsequently, gives:
 
