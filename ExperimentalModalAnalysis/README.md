@@ -1,9 +1,9 @@
 # Experimental Modal Analysis (Impact Testing
 *（编辑公式时，如果公式中存在下划线前有空格，那么必须统一都包含空格，否则会出现无法显示的情况。）*
-*想显示花括弧，得用 \lbrace \rbrace 命令*
+*（想显示 $ \lbrace \rbrace  $，得用 \lbrace \rbrace 命令）*
 
 Measured from the tool tip in axial $(z)$ direction, the approximate impact locations of the $5$ points are $0$, $55$, $90$, $130$ and $165$ mm. The vibration is measured at the tool tip (Point $1$) by an accelerometer.
-$$ \lbrace \rbrace  $$
+
 <div align = "center">
 <img src = "Tool.png"  width = "250" height = "200" alt = "Points on the Tool" title = "Points on the Tool">
 </div>
@@ -17,7 +17,7 @@ $$m\ddot x = F - c\dot x - kx$$
 
 or in matrix from:
 
-$${[ {{M_x}} ]{ \{\ddot x} \} + [ {{C_x}} ]\{ {\dot x} \} + [ {{K_x}} ]\{ x \} = \{ F \}}$$
+$${[{M_x}]{\lbrace \ddot x \rbrace }  + {[{C_x}] \lbrace \dot x \rbrace}  + [ {{K_x}} ]\{ x \} = \{ F \}}$$
 
 These equations are coupled and are cumbersome to solve for more than two degree of freedom systems, thus they are converted to modal coordinates as:
 
