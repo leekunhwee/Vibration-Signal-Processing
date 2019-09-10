@@ -1,4 +1,5 @@
-# Experimental Modal Analysis (Impact Testing)
+# Experimental Modal Analysis (Impact Testing
+*{编辑公式时，如果存在下划线前有空格，那么必须统一都包含空格，否则会出现无法显示的情况。）*
 
 Measured from the tool tip in axial $(z)$ direction, the approximate impact locations of the $5$ points are $0$, $55$, $90$, $130$ and $165$ mm. The vibration is measured at the tool tip (Point $1$) by an accelerometer.
 
@@ -45,8 +46,6 @@ The mode shapes are found from the estimated residues. Displacement vector can b
 $$\{ x \} = \left( {\sum\limits_{k = 1}^n {{{\{ P \}}_k}\{ P \}_k^T {\Phi _{qk}}} } \right)\{ F \}$$
 
 Thus,
-
-$$ \left[ {H(s)} \right]{\text{ = }}\sum\limits_{k = 1}^n {\frac{{{{\left\{ P \right\}}_k}\left\{ P \right\}_k^* }}{{{m_{q,k}}}}\frac{1}{{{s^2} + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k} ^2 }}}  = \sum\limits_{k = 1}^n {\frac{{{{\left[ R \right]}_k}}}{{{s^2 } + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} $$
 
 $$ {[H(s)]} = {\sum\limits _{k = 1}^n {{\frac{{P _k} {P _k^*}}{m _{q,k}}}{\frac{1}{{{s^2}+ {2{\zeta _k}{\omega _{n,k}}s} + {\omega _{n,k} ^2}}}}}} = {\sum\limits _{k = 1}^n {\frac{[R] _k}{s^2 + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2 }}} $$
 
@@ -115,27 +114,27 @@ Where, the $u_{11}u_{11}$ means the direct displacement response residues of poi
 
 If let $ s \to j\omega $
 
-$$ {\Phi _{11}} = {\left( {\frac{{{u_{11}}{u_{11}}}}{{{\omega ^2} + j2{\zeta _1}{\omega _{n1}}\omega  - \omega _{n1}^2}}} \right)_{mode\ 1}} + {\left( {\frac{{{u_{12}}{u_{12}}}}{{{\omega ^2} + j2{\zeta _2}{\omega _{n2}}\omega  - \omega _{n2}^2}}} \right)_{mode\ 2}} + {\left( {\frac{{{u_{13}}{u_{13}}}}{{{\omega ^2} + j2{\zeta _3}{\omega _{n3}}\omega  - \omega _{n3}^2}}} \right)_{mode\ 3}} $$
+$$ {\Phi _{11}} = {\left( {\frac{{{u _{11}}{u _{11}}}}{{{\omega ^2} + j2{\zeta _1}{\omega _{n1}}\omega  - \omega _{n1}^2}}} \right) _{mode\ 1}} + {\left( {\frac{{{u _{12}}{u _{12}}}}{{{\omega ^2} + j2{\zeta _2}{\omega _{n2}}\omega - \omega _{n2}^2}}} \right) _{mode\ 2}} + {\left( {\frac{{{u _{13}}{u _{13}}}}{{{\omega ^2} + j2{\zeta _3}{\omega _{n3}}\omega - \omega _{n3}^2}}} \right) _{mode\ 3}} $$
 
 When $ω=ω_{n1}$ , leads to a negligible contribution from ωn2 and ωn3, and the first part become equal to:
 
-$$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx {\left( {\frac{{{u_{11}}{u_{11}}}}{{\omega _{n1}^2 + j2{\zeta _1}{\omega _{n1}}{\omega _{n1}} - \omega _{n1}^2}}} \right)_{mode\ 1}} $$
+$$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx {\left( {\frac{{{u _{11}}{u _{11}}}}{{\omega _{n1}^2 + j2{\zeta _1}{\omega _{n1}}{\omega _{n1}} - \omega _{n1}^2}}} \right) _{mode\ 1}} $$
 
 So we have:
 
-$$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx j{H_{11,1}} = {\left( {\frac{{{u_{11}}{u_{11}}}}{{j2{\zeta _1}\omega _{n1}^2}}} \right)_{mode\ 1}} $$
+$$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx j{H _{11,1}} = {\left( {\frac{{{u _{11}}{u _{11}}}}{{j2{\zeta _1}\omega _{n1}^2}}} \right) _{mode\ 1}} $$
 
-$$ {u_{11}} = \sqrt { - 2{\zeta _1}\omega _{n1}^2{H_{11,1}}} $$
+$$ {u _{11}} = \sqrt { - 2{\zeta _1}\omega _{n1}^2{H _{11,1}}} $$
 
 Similarly, when $ω=ω_{n2}$  and $ω=ω_{n3}$,
 
-$$ {\Phi _{11}}\left( {\omega  = {\omega _{n2}}} \right) \approx j{H_{11,2}} = {\left( {\frac{{{u_{12}}{u_{12}}}}{{j2{\zeta _2}\omega _{n2}^2}}} \right)_{mode\ 2}} $$
+$$ {\Phi _{11}}\left( {\omega  = {\omega _{n2}}} \right) \approx j{H _{11,2}} = {\left( {\frac{{{u _{12}}{u _{12}}}}{{j2{\zeta _2}\omega _{n2}^2}}} \right) _{mode\ 2}} $$
 
-$$ {u_{12}} = \sqrt { - 2{\zeta _2}\omega _{n2}^2{H_{11,2}}} $$
+$$ {u _{12}} = \sqrt { - 2{\zeta _2}\omega _{n2}^2{H _{11,2}}} $$
 
-$$ {\Phi _{11}}\left( {\omega  = {\omega _{n3}}} \right) \approx j{H_{11,3}} = {\left( {\frac{{{u_{13}}{u_{13}}}}{{j2{\zeta _3}\omega _{n3}^2}}} \right)_{mode\ 3}} $$
+$$ {\Phi _{11}}\left( {\omega  = {\omega _{n3}}} \right) \approx j{H _{11,3}} = {\left( {\frac{{{u _{13}}{u _{13}}}}{{j2{\zeta _3}\omega _{n3}^2}}} \right) _{mode\ 3}} $$
 
-$$ {u_{13}} = \sqrt { - 2{\zeta _3}\omega _{n3}^2{H_{11,3}}} $$
+$$ {u _{13}} = \sqrt { - 2{\zeta _3}\omega _{n3}^2{H _{11,3}}} $$
 
 Similarly,
 
