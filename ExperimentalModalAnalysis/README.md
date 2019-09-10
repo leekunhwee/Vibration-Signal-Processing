@@ -111,7 +111,7 @@ The transfer function ${\Phi _{11}}$is measured by hitting the structure at poin
 
 $$ \Phi  = G + jH $$
 
-<b> \color{red}{Where, the $u_{11}u_{11}$ means the direct displacement response residues of point $1$ contributed by the first mode. E.g. for $u_{11}$, First subscript denote the measured or impact point, and Second subscript denote the modal number.}</b>
+<b> Where, the $u_{11}u_{11}$ means the direct displacement response residues of point $1$ contributed by the first mode. E.g. for $u_{11}$, First subscript denote the measured or impact point, and Second subscript denote the modal number.</b>
 
 If let $ s \to j\omega $
 
@@ -203,8 +203,13 @@ p_2 =    [1.7165 &   0.7057 &  \ \ \  0.1830 &  -0.1333 &  -0.2136]^T \\\\
 p_3 =    [2.0023 &   0.4510 &  -0.1414 &  -0.2755 &  -0.3013]^T
 \end{cases}
 $$
-
 <br>
+First three modal shapes:
+<div align = "center">
+<img src = "Modes1.png"  width = "600" height = "400" alt = "Modal shapes of Tool" title = "Modal shapes of Tool">
+</div>
+<p align = "center"><b>Modal shapes of Tool</b></p>
+
 <div align = "center">
 <img src = "Modes.png"  width = "600" height = "400" alt = "Modal shapes of Tool" title = "Modal shapes of Tool">
 </div>

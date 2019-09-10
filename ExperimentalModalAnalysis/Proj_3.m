@@ -106,7 +106,7 @@ legend('\fontsize{10}\fontname{Times New Roman}\itReal','location','northwest')
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
 title('\fontsize{10}FRF G11')
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f\rm/ Hz')
-ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m意^{-1}')
+ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m﹞N^{-1}')
 subplot(212)
 plot(Point_1_Channel_1_CH1(101:3500,1),Point_1_Channel_1_CH1(101:3500,3),'b-','linewidth',2);
 hold on
@@ -116,9 +116,9 @@ plot(w/2/pi,imag(frf311),'r-.','linewidth',2);
 
 legend('\fontsize{10}\fontname{Times New Roman}\itImag','location','northwest')
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
-set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%??word?13.5,9?
+set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%word 13.5,9
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f\rm/ Hz')
-ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m意^{-1}')
+ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m﹞N^{-1}')
 
 figure(2)
 subplot(211)
@@ -131,7 +131,7 @@ legend('\fontsize{10}\fontname{Times New Roman}\itReal','location','northwest')
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
 title('\fontsize{10}FRF G12')
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f\rm/ Hz')
-ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m意^{-1}')
+ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m﹞N^{-1}')
 subplot(212)
 plot(Point_2_Channel_1_CH1(101:3500,1),Point_2_Channel_1_CH1(101:3500,3),'b-','linewidth',2);
 hold on
@@ -140,9 +140,9 @@ plot(w/2/pi,imag(frf212),'r--','linewidth',2);
 plot(w/2/pi,imag(frf312),'r-.','linewidth',2);
 legend('\fontsize{10}\fontname{Times New Roman}\itImag','location','northwest')
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
-set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%??word?13.5,9?
+set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%word13.5,9
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f\rm/ Hz')
-ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m意^{-1}')
+ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m﹞N^{-1}')
 
 figure(3)
 subplot(211)
@@ -155,7 +155,7 @@ legend('\fontsize{10}\fontname{Times New Roman}\itReal','location','northwest')
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
 title('\fontsize{10}FRF G13')
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f\rm/ Hz')
-ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m意^{-1}')
+ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m﹞N^{-1}')
 subplot(212)
 plot(Point_3_Channel_1_CH1(101:3500,1),Point_3_Channel_1_CH1(101:3500,3),'b-','linewidth',2);
 hold on
@@ -164,9 +164,9 @@ plot(w/2/pi,imag(frf213),'r--','linewidth',2);
 plot(w/2/pi,imag(frf313),'r-.','linewidth',2);
 legend('\fontsize{10}\fontname{Times New Roman}\itImag','location','northwest')
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
-set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%??word?13.5,9?
+set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%word13.5,9
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f\rm/ Hz')
-ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m意^{-1}')
+ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m﹞N^{-1}')
 
 figure(4)
 subplot(211)
@@ -179,7 +179,7 @@ legend('\fontsize{10}\fontname{Times New Roman}\itReal','location','northwest')
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
 title('\fontsize{10}FRF G14')
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f\rm/ Hz')
-ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m意^{-1}')
+ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m﹞N^{-1}')
 subplot(212)
 plot(Point_4_Channel_1_CH1(101:3500,1),Point_4_Channel_1_CH1(101:3500,3),'b-','linewidth',2);
 hold on
@@ -188,9 +188,9 @@ plot(w/2/pi,imag(frf214),'r--','linewidth',2);
 plot(w/2/pi,imag(frf314),'r-.','linewidth',2);
 legend('\fontsize{10}\fontname{Times New Roman}\itImag','location','northwest')
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
-set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%??word?13.5,9?
+set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%word13.5,9
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f\rm/ Hz')
-ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m意^{-1}')
+ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m﹞N^{-1}')
 
 figure(5)
 subplot(211)
@@ -203,7 +203,7 @@ legend('\fontsize{10}\fontname{Times New Roman}\itReal','location','northwest')
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
 title('\fontsize{10}FRF G15')
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f\rm/ Hz')
-ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m意^{-1}')
+ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m﹞N^{-1}')
 subplot(212)
 plot(Point_5_Channel_1_CH1(101:3500,1),Point_5_Channel_1_CH1(101:3500,3),'b-','linewidth',2);
 hold on
@@ -212,9 +212,9 @@ plot(w/2/pi,imag(frf215),'r--','linewidth',2);
 plot(w/2/pi,imag(frf315),'r-.','linewidth',2);
 legend('\fontsize{10}\fontname{Times New Roman}\itImag','location','northwest')
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
-set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%??word?13.5,9?
+set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%word13.5,9
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f\rm/ Hz')
-ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m意^{-1}')
+ylabel('\fontsize{10}\fontname{Times New Roman}\it FRF\rm/ m﹞N^{-1}')
 
 %% 
 u11=sqrt(-2*zeta1*w1^2*G11(3));
@@ -249,3 +249,5 @@ plot(p2,y,'g','linewidth',2)
 plot(p3,y,'b','linewidth',2)
 plot([0,0],[0,165],'k','linewidth',2)
 legend('mode1','mode2','mode3')
+set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
+set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%word13.5,9
