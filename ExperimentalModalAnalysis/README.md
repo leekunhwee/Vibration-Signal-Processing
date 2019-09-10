@@ -17,11 +17,11 @@ $$m\ddot x = F - c\dot x - kx$$
 
 or in matrix from:
 
-$${[{M_x}]{\lbrace \ddot x \rbrace }  + {[{C_x}] \lbrace \dot x \rbrace}  + [ {{K_x}} ]\{ x \} = \{ F \}}$$
+$${[{M_x}]{\lbrace \ddot x \rbrace }  + {[{C_x}] \lbrace \dot x \rbrace}  + [ {{K_x}} ]\lbrace x \rbrace = \lbrace F \rbrace}$$
 
 These equations are coupled and are cumbersome to solve for more than two degree of freedom systems, thus they are converted to modal coordinates as:
 
-$$[ {{M_q}} ]\{ {\ddot q} \} + [ {{C_q}} ]\{ {\dot q} \} + [ {{K_q}} ]\{ q \} = \{ R \}$$
+$$[ {{M_q}} ]\lbrace {\ddot q} \rbrace + [ {{C_q}} ]\lbrace {\dot q} \rbrace + [ {{K_q}} ]\lbrace q \rbrace = \lbrace R \rbrace$$
 
 Where the modal mass, modal damping and model stiffness are separately:
 
