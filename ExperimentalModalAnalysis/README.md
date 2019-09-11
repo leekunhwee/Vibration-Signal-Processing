@@ -26,13 +26,23 @@ $$[ {{M_q}} ]\lbrace {\ddot q} \rbrace + [ {{C_q}} ]\lbrace {\dot q} \rbrace + [
 
 Where the modal mass, modal damping and model stiffness are separately:
 
-$${[ M ]_q} = \lbrace P \rbrace _k^T[ {{M_x}} ]{\lbrace P \rbrace _k}$$
+$${[ M _q] _k} = \lbrace P \rbrace _k^T[ {{M_x}} ]{\lbrace P \rbrace _k}$$
 
-$${[ C ]_q} = \lbrace P \rbrace _k^T[ {{C_x}} ]{\lbrace P \rbrace _k}$$
+$${[ C _q] _k} = \lbrace P \rbrace _k^T[ {{C_x}} ]{\lbrace P \rbrace _k}$$
 
-$${[ K ]_q} = \lbrace P \rbrace _k^T[ {{K_x}} ]{\lbrace P \rbrace _k}$$
+$${[ K _q] _k} = \lbrace P \rbrace _k^T[ {{K_x}} ]{\lbrace P \rbrace _k}$$
 
-And $\lbrace P \rbrace _k  $ is the Eigenvector (mode shapes)
+And $\lbrace P \rbrace _k $ is the Eigenvector (mode shapes) of $k^{th}$ order with a structure like:
+
+$$ \lbrace P \rbrace _k = \begin{pmatrix}
+{p_{1}}\\\\
+{p_{2}}\\\\
+{p_{3}}\\\\
+{\vdots }\\\\
+{p_{n}}
+\end{pmatrix} _k
+$$
+
 The Frequency Response Function ($FRF$) of the system can be write as:
 
 $$ [ {H(s)} ] = \frac{{\lbrace {X(s)} \rbrace}}{{\lbrace {F(s)} \rbrace}} $$
@@ -41,15 +51,15 @@ The element in row $i$ and column $l$ of $\left[ {H\left( s \right)} \right]$ ma
 
 $$ {h_{il}} = \sum\limits_{k = 1}^n {\left( {\frac{{{\alpha _{il,k}} + {\beta _{il,k}}s}}{{{s^2} + 2{\xi _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} \right)} $$
 
-Where $n$ – number of modes.
+Where $n$ – number of modes; $\omega _{n,k}$ and $\zeta _k$ are the undamped naturalfrequencies and the modal damping ratio for mode $k$ of the system.
 
 The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes $\lbrace P \rbrace_k  $ and modal transfer functions $ \Phi _{q,k} $.
 
-$$\lbrace x \rbrace = \left( {\sum\limits_{k = 1}^n {{{\lbrace P \rbrace}_k}\lbrace P \rbrace_k^T {\Phi _{qk}}} } \right)\lbrace F \rbrace$$
+$$\lbrace X \rbrace = \left( {\sum\limits_{k = 1}^n {{{\lbrace P \rbrace}_k}\lbrace P \rbrace_k^T {\Phi _{qk}}} } \right)\lbrace F \rbrace$$
 
 Thus,
 
-$$ {[H(s)]} = {\sum\limits _{k = 1}^n {{\frac{{\lbrace P \rbrace _k} {\lbrace P  \rbrace _k^*}}{m _{q,k}}}{\frac{1}{{{s^2}+ {2{\zeta _k}{\omega _{n,k}}s} + {\omega _{n,k} ^2}}}}}} = {\sum\limits _{k = 1}^n {\frac{[R] _k}{s^2 + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2 }}} $$
+$$ {[H(s)]} = {\sum\limits _{k = 1}^n {{\frac{{\lbrace P \rbrace _k} {\lbrace P  \rbrace _k^T}}{m _{q,k}}}{\frac{1}{{{s^2}+ {2{\zeta _k}{\omega _{n,k}}s} + {\omega _{n,k} ^2}}}}}} = {\sum\limits _{k = 1}^n {\frac{[R] _k}{s^2 + 2{\zeta _k}{\omega _{n,k}}s + \omega _{n,k}^2 }}} $$
 
 Note that the modal mass for mode $k$ using the unscaled modal matrix is:
 
@@ -61,64 +71,71 @@ $$ {\frac{\lbrace P \rbrace _k^T}{\sqrt {m _{q,k}}}}{[M _x]}{\frac{\lbrace P _k 
 
 $$ \lbrace u \rbrace _k^T[ {{M _x}} ]{\lbrace u \rbrace _k} = 1 $$
 
-This is a convenient way to identify the modal parameters, i.e. mode shapes, modal stiffness and modal damping of the structure.
+This is a convenient way to identify the modal parameters, i.e. mode shapes, modal stiffness and modal damping of the structure. Where ${\lbrace u \rbrace _k}$ corresponds to the normalized mode shape giving a unity modal mass, whit  a structure like:
 
-${\lbrace u \rbrace_k}$ - the mass normalized mode shape
+$$ \lbrace u \rbrace _k = \begin{pmatrix}
+{u_{1}}\\\\
+{u_{2}}\\\\
+{u_{3}}\\\\
+{\vdots }\\\\
+{u_{n}}
+\end{pmatrix} _k
+$$
 
-$$ \frac{\lbrace P \rbrace _k^T \lbrace P \rbrace _k }{m _{ q,k}} = \lbrace u \rbrace _k \lbrace u \rbrace _k^T = [R] _k $$
 
-Where,
+$$ \frac{\lbrace P \rbrace _k \lbrace P \rbrace _k^T }{m _{ q,k}} = \lbrace u \rbrace _k \lbrace u \rbrace _k^T = [R] _k $$
 
-$$[ R ]_k = \begin{bmatrix}{u_1}{u_1} & {u_1}{u_2} & \cdots & {u_1}{u_n}\\\\
-{{u_2}{u_1}} & {{u_2}{u_2}} & \cdots & {{u_2}{u_n}}\\\\
-\vdots & \vdots & \ddots & \vdots \\\\
-{{u_n}{u_1}} & {{u_n}{u_2}} & \cdots & {{u_n}{u_n}}\end{bmatrix}_k$$
+Where, the residue matrix for a particular mode $k$ can be expressed in the following general form:
 
-In our case, the residue matrix for specific modes will be of the form:
+$$[ R ]_k = \begin{bmatrix}{u_1}{u_1} & {u_1}{u_2} & \cdots & {u_1}{u_l} & \cdots & {u_1}{u_n}\\\\
+{{u_2}{u_1}} & {{u_2}{u_2}} & \cdots & {u_2}{u_l} & \cdots & {{u_2}{u_n}}\\\\
+\vdots & \vdots & \ddots & \vdots & \vdots & \vdots\\\\
+{{u_l}{u_1}} & {{u_l}{u_2}} & \cdots & {u_l}{u_l} & \cdots & {{u_l}{u_n}}\\\\
+\vdots & \vdots & \vdots & \vdots & \ddots & \vdots\\\\
+{{u_n}{u_1}} & {{u_n}{u_2}} & \cdots & {u_n}{u_l} & \cdots & {{u_n}{u_n}}\end{bmatrix}_k$$
+
+If we take row $l$ of the residue matrix for mode $k$, we have:
 
 $$ \begin{pmatrix}
-{R_{l1}}\\\\
-{R_{l2}}\\\\
-{R_{l3}}\\\\
-{R_{l4}}\\\\
-{R_{l5}}
-\end{pmatrix}_k^T =
+{R_{l1}}&{R_{l2}}& \cdots &{R_{ll}}& \cdots &{R_{ln}}
+\end{pmatrix}_k =
 \begin{pmatrix}
-{u_l}{u_1}\\\\
-{u_l}{u_2}\\\\
-{u_l}{u_3}\\\\
-{u_l}{u_4}\\\\
-{u_l}{u_5}
-\end{pmatrix}_k^T $$
+{u_l}{u_1}&
+{u_l}{u_2}&
+& \cdots &
+{u_l}{u_l}&
+& \cdots &
+{u_l}{u_n}
+\end{pmatrix}_k $$
 
-Where, $k=1,2,…, n$ for n number of modes. When we choose move the hammer to impact all the point on the tool-holder combination and measure the vibration at point $1$ where the accelerometer is mounted. The matrix can be written as:
+Where, $k=1,2,…, n$ for n number of modes. In our case, when we choose move the hammer to impact all the point on the tool-holder combination and measure the vibration at point $1$ where the accelerometer is mounted. The residue matrix for specific modes will be of the form:
 
 $$ \begin{pmatrix}
-{R_{11}}\\\\
-{R_{12}}\\\\
-{R_{13}}\\\\
-{R_{14}}\\\\
+{R_{11}}&
+{R_{12}}&
+{R_{13}}&
+{R_{14}}&
 {R_{15}}
-\end{pmatrix}_k^T =
+\end{pmatrix}_k =
 \begin{pmatrix}
-{u_1}{u_1}\\\\
-{u_1}{u_2}\\\\
-{u_1}{u_3}\\\\
-{u_1}{u_4}\\\\
+{u_1}{u_1}&
+{u_1}{u_2}&
+{u_1}{u_3}&
+{u_1}{u_4}&
 {u_1}{u_5}
-\end{pmatrix}_k^T $$
+\end{pmatrix}_k $$
 
-The transfer function ${\Phi _{11}}$is measured by hitting the structure at point 1 and measuring at point $1$, i.e. where the accelerometer is mounted. This is known as the direct transfer function. The transfer function ${\Phi _{12}}$ is measured by hitting the structure at point $2$ and measuring at point $1$. This is a cross transfer function.
+The transfer function ${\Phi _{11}}$is measured by hitting the structure at point $1$ and measuring at point $1$, i.e. where the accelerometer is mounted. This is known as the direct transfer function. The transfer function ${\Phi _{12}}$ is measured by hitting the structure at point $2$ and measuring at point $1$. This is a cross transfer function.
 
 $$ \Phi  = G + jH $$
 
-<b> Where, the $u_{11}u_{11}$ means the direct displacement response residues of point $1$ contributed by the first mode. E.g. for $u_{11}$, First subscript denote the measured or impact point, and Second subscript denote the modal number.</b>
+<b> Where, the $u_{11}u_{11}$ means the direct displacement response residues of point $1$ contributed by the first mode. E.g. for $u_{11}$, First subscript denote the measured (for left $u$) or impact point (for right $u$), and Second subscript denote the modal number.</b>
 
 If let $ s \to j\omega $
 
 $$ {\Phi _{11}} = {\left( {\frac{{{u _{11}}{u _{11}}}}{{{\omega ^2} + j2{\zeta _1}{\omega _{n1}}\omega  - \omega _{n1}^2}}} \right) _{mode\ 1}} + {\left( {\frac{{{u _{12}}{u _{12}}}}{{{\omega ^2} + j2{\zeta _2}{\omega _{n2}}\omega - \omega _{n2}^2}}} \right) _{mode\ 2}} + {\left( {\frac{{{u _{13}}{u _{13}}}}{{{\omega ^2} + j2{\zeta _3}{\omega _{n3}}\omega - \omega _{n3}^2}}} \right) _{mode\ 3}} $$
 
-When $ω=ω_{n1}$ , leads to a negligible contribution from $ω_{n2}$ and $ω_{n3}$, and the first part become equal to:
+When $ω=ω_{n1}$ , leads to a negligible contribution from $ω_{n2}$ and $ω_{n3}$, and the first part approximately equal to:
 
 $$ {\Phi _{11}}\left( {\omega  = {\omega _{n1}}} \right) \approx {\left( {\frac{{{u _{11}}{u _{11}}}}{{\omega _{n1}^2 + j2{\zeta _1}{\omega _{n1}}{\omega _{n1}} - \omega _{n1}^2}}} \right) _{mode\ 1}} $$
 
