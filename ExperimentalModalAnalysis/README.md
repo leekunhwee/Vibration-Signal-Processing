@@ -35,11 +35,11 @@ $${[ K _q] _k} = \lbrace P \rbrace _k^T[ {{K_x}} ]{\lbrace P \rbrace _k}$$
 And $\lbrace P \rbrace _k $ is the Eigenvector (mode shapes) of $k^{th}$ order with a structure like:
 
 $$ \lbrace P \rbrace _k = \begin{pmatrix}
-{p_{1}}\\\\
-{p_{2}}\\\\
-{p_{3}}\\\\
+{p _{1}}\\\\
+{p _{2}}\\\\
+{p _{3}}\\\\
 {\vdots }\\\\
-{p_{n}}
+{P _{n}}
 \end{pmatrix} _k
 $$
 
@@ -74,11 +74,11 @@ $$ \lbrace u \rbrace _k^T[ {{M _x}} ]{\lbrace u \rbrace _k} = 1 $$
 This is a convenient way to identify the modal parameters, i.e. mode shapes, modal stiffness and modal damping of the structure. Where ${\lbrace u \rbrace _k}$ corresponds to the normalized mode shape giving a unity modal mass, whit  a structure like:
 
 $$ \lbrace u \rbrace _k = \begin{pmatrix}
-{u_{1}}\\\\
-{u_{2}}\\\\
-{u_{3}}\\\\
+{u _{1}}\\\\
+{u _{2}}\\\\
+{u _{3}}\\\\
 {\vdots }\\\\
-{u_{n}}
+{u _{n}}
 \end{pmatrix} _k
 $$
 
