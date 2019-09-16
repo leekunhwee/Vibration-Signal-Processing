@@ -5,9 +5,9 @@ close all
 %% Data Load
 % load Point1_Channel1_CH1.txt
 
-a=dir(fullfile('C:\Users\alexlee.stu\Documents\GitHub\Vibration-Signal-Processing\ExperimentalModalAnalysis\*.txt'));
+a=dir(fullfile('C:\Users\Alex\Documents\GitHub\Vibration-Signal-Processing\ExperimentalModalAnalysis\*.txt'));
 for ii=1:length(a)
-    load(fullfile('C:\Users\alexlee.stu\Documents\GitHub\Vibration-Signal-Processing\ExperimentalModalAnalysis',a(ii).name));
+    load(fullfile('C:\Users\Alex\Documents\GitHub\Vibration-Signal-Processing\ExperimentalModalAnalysis',a(ii).name));
 end
 
 % first mode real peak, valley and image valley

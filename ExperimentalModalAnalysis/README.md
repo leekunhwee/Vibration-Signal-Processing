@@ -51,7 +51,7 @@ The element in row $i$ and column $l$ of $\left[ {H\left( s \right)} \right]$ ma
 
 $$ {h_{il}} = \sum\limits_{k = 1}^n {\left( {\frac{{{\alpha _{il,k}} + {\beta _{il,k}}s}}{{{s^2} + 2{\xi _k}{\omega _{n,k}}s + \omega _{n,k}^2}}} \right)} $$
 
-Where $n$ – number of modes; $\omega _{n,k}$ and $\zeta _k$ are the undamped naturalfrequencies and the modal damping ratio for mode $k$ of the system.
+Where $n$ – number of modes; $\omega _{n,k}$ and $\zeta _k$ are the undamped natural frequencies and the modal damping ratio for mode $k$ of the system.
 
 The mode shapes are found from the estimated residues. Displacement vector can be expressed by its mode shapes $\lbrace P \rbrace_k  $ and modal transfer functions $ \Phi _{q,k} $.
 
