@@ -1,24 +1,28 @@
-%%%%%%%%%%%%%%%%%%%%%%%
-%通过模态叠加法得到最终频响，考虑留数%
-%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% -------------Copyright--------------%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Jianhui Li                         %
+% Time: 09/22/2019                           %
+% University of British Columbia, BC, Canada %
+% Affiliation:                               %
+% Department of Mechanical Engineering       %
+% Manufacturing Automation Laboratary        %
+% E-mail: jianhui.li@alumni.ubc.ca           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%                          Copyright                        %
-%     This code is developed by Jianhui Li    %
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%数据来源：
+% Reference：
 %Kai, C. (2009). Machining Dynamics. (K. Cheng, Ed.).
 %London: Springer London. https://doi.org/10.1007/978-1-84628-368-0
 %P210
-%因为书中参数所绘图形与实例图片不太对应，所以参数略有修改
-%为与书中对应，频率单位为  rad·s^{-1}
+% There are some parameters may not correspond with the figures in the book 
+% some parameters was modified
+% The unit of frequency:  rad·s^{-1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clc
 close all
 clear
 
-% 定义刀具X向模态参数
+% Modal parameters in X direction of cutting tool
 % 
 wnX = [120.5 247.05 341.65 645.48 715.39 731.75 748.76 761.57 811.46 987.15 1030 1160 1200]*2*pi;               %   rad·s^{-1}
 zetaX = [4.21 3.54 0.93693 0.26558 0.41218 0.29715 0.16347 0.41044 1.01 3.67 0.789 0.94237 0.44894 ]*0.01;
@@ -28,7 +32,7 @@ resiX=[8.031267e-006+1j*1.830470e-006 3.442107e-006+1j*5.209837e-007 9.108225e-0
    3.820509e-005+1j*3.567028e-006 9.331169e-007+1j*2.193275e-006 -2.194058e-006+1j*(-1.615678e-006)...
    -7.935642e-007+1j*2.950998e-007]; %m/N
 
-% 定义刀具Y向模态参数
+% Modal parameters in Y direction of cutting tool
 wnY = [49.21 94.72 160.38 187.55 238.66 344.69 439.92 488.25 586.86 684.19 751.8 894.23]*2*pi;               %   rad·s^{-1}
 zetaY = [0.20605 0.36509 2.44 1.97 2.58 1.72 1.6 0.218 0.46732 1.85 1.58 2.39]*0.01;
 resiY=[-1.733888e-008+1j*1.712200e-008 2.465764e-008+1j*(-6.332934e-008) -4.392552e-007+1j*1.364358e-007...
@@ -40,19 +44,19 @@ resiY=[-1.733888e-008+1j*1.712200e-008 2.465764e-008+1j*(-6.332934e-008) -4.3925
 % zeta = [0.041 0.048 0.027];
 % wn = [309.1 1389 1586]*2*pi;               %   rad·s^{-1}
 
-% 定义分析频带及分辨率
+% Analysis frequency width and its resolution
 f_start=0;
 f_end=8000-0.5;
 df=1;
 w = (f_start:df:f_end)'*2*pi;   % frequency,   rad·s^{-1}
 f=w/2/pi;
 
-% 定义元胞数组
+% Define cells
 
 FRFiX={1,length(resiX)};
 FRFiY={1,length(resiY)};
 
-%初始化
+% Initialization
 FRFX= zeros(length(w),1);
 FRFY= zeros(length(w),1);
 
@@ -71,7 +75,7 @@ sigmaY=real(resiY);
 nuX=imag(resiX);
 nuY=imag(resiY);
 
-% 各阶模态计算与叠加
+% Supreposition of all the modes
 for cnt = 1:length(resiX)
 
     wdX(cnt)=wnX(cnt)*sqrt(1-zetaX(cnt)^2);
@@ -115,7 +119,7 @@ plot(f*2*pi,imag(FRFX),'b','linewidth',2)
 xlim([0,8000])
 grid on  
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
-set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%对应word（13.5,9）
+set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');% word（13.5,9）
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f  \rm/  rad·s^{-1}')
 ylabel('\fontsize{10}\fontname{Times New Roman}\it FRf  \rm/ m·N^{-1}')
 
@@ -153,7 +157,7 @@ plot(f*2*pi,imag(FRFY),'b','linewidth',2)
 xlim([0,8000])
 grid on  
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
-set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');%对应word（13.5,9）
+set(gcf,'unit','centimeters','position',[0 10 13.53 9.03],'color','white');% word（13.5,9）
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f  \rm/  rad·s^{-1}')
 ylabel('\fontsize{10}\fontname{Times New Roman}\it FRf  \rm/ m·N^{-1}')
 
