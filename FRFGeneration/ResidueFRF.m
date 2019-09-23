@@ -165,7 +165,7 @@ figure(4)
 
 plot(f*2*pi,abs(FRFY),'b','linewidth',2)
 xlim([0,8000])
-grid on  
+grid on
 title('\fontsize{10}FRF Y')
 set(gca,'FontSize', 10 ,'FontName', 'Times New Roman')
 xlabel('\fontsize{10}\fontname{Times New Roman}\it f  \rm/  rad¡¤s^{-1}')
