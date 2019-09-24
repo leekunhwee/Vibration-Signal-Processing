@@ -5,9 +5,9 @@ close all
 %% Data Load
 % load Point1_Channel1_CH1.txt
 
-a=dir(fullfile('C:\Users\Alex\Documents\GitHub\Vibration-Signal-Processing\ExperimentalModalAnalysis\*.txt'));
+a=dir(fullfile('C:\Users\alexlee.stu\Documents\GitHub\Vibration-Signal-Processing\ExperimentalModalAnalysis\*.txt'));
 for ii=1:length(a)
-    load(fullfile('C:\Users\Alex\Documents\GitHub\Vibration-Signal-Processing\ExperimentalModalAnalysis',a(ii).name));
+    load(fullfile('C:\Users\alexlee.stu\Documents\GitHub\Vibration-Signal-Processing\ExperimentalModalAnalysis',a(ii).name));
 end
 
 % first mode real peak, valley and image valley
@@ -19,7 +19,7 @@ G13=[0.1470	-0.1814	-0.3077	-0.0108	-0.0274	-0.0228	-0.0240	 0.0014	 0.0154]*1e-
 G14=[0.0994	-0.1344	-0.2158	-0.0252	-0.0016	 0.0166	-0.0205	 0.0091	 0.0300]*1e-6;
 G15=[0.0730	-0.0947	-0.1566	-0.0282	 0.0037	 0.0266	-0.0163	 0.0143	 0.0328]*1e-6;
 
-w=(101:3500)*2*pi;
+w=(101:3500)'*2*pi;
 
 %% First modal
 f1=1074;
