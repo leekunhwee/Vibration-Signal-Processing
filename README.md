@@ -10,6 +10,8 @@
   * Impact Signals processing (Including FRF, Cross-power spectrum, Autospectrum, Coherence Calculation)
 * Modal Parameter Identification
   * Rational Fraction Polynomial (a frequency method to identify modal parameters)
+* Post-Processing
+  * FFT (Zero padding)
 * Pre-Processing
   * Trend Term Elimination
   * Data Smoothing 
